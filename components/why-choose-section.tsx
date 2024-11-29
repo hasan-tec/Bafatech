@@ -16,7 +16,7 @@ const features = [
 
 export function WhyChooseSection() {
   return (
-    <section className="py-24 md:py-32 bg-gray-50">
+    <section className="py-24 md:py-32 bg-gradient-to-b from-white to-gray-50/50">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -33,11 +33,11 @@ export function WhyChooseSection() {
             {/* Feature List */}
             <div className="space-y-4">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <div className="text-[#0066CC]">
+                <div key={index} className="flex items-start space-x-3">
+                  <div className="text-[#0066CC] mt-1">
                     <ArrowRight className="h-5 w-5" />
                   </div>
-                  <span className="text-gray-700">{feature.text}</span>
+                  <span className="text-gray-700 leading-relaxed">{feature.text}</span>
                 </div>
               ))}
             </div>
@@ -46,13 +46,13 @@ export function WhyChooseSection() {
             <div className="pt-4 flex items-center space-x-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center px-6 py-3 bg-[#0066CC] text-white rounded-md hover:bg-[#0052a3] transition-colors text-sm font-medium"
+                className="inline-flex items-center px-8 py-4 bg-[#0066CC] text-white rounded-md hover:bg-[#0052a3] transition-colors text-sm font-medium"
               >
                 Contact Now
               </Link>
               <Image 
-                src="/curved-arrow.svg" 
-                alt="" 
+                src="https://images.unsplash.com/photo-1700000000000-abc123?w=80&h=40&q=80&fit=crop&auto=format"
+                alt="Decorative arrow" 
                 width={80} 
                 height={40}
                 className="hidden md:block opacity-60"
@@ -62,53 +62,44 @@ export function WhyChooseSection() {
 
           {/* Right Image Grid */}
           <div className="relative">
-            {/* Decorative dots */}
-            <div className="absolute -right-4 top-1/2 transform -translate-y-1/2">
-              <div className="flex flex-col gap-2">
-                {[...Array(6)].map((_, i) => (
-                  <div key={i} className="flex gap-2">
-                    {[...Array(2)].map((_, j) => (
-                      <div
-                        key={j}
-                        className="w-1 h-1 rounded-full bg-[#0066CC]"
-                        style={{ opacity: 0.3 }}
-                      />
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
-
             {/* Images Grid */}
-            <div className="grid grid-cols-12 gap-4">
-              {/* Main Image */}
-              <div className="col-span-12 lg:col-span-8 lg:col-start-5">
+            <div className="relative">
+              {/* Decorative lines */}
+              <div className="absolute -right-8 top-0 bottom-0">
+                <div className="flex gap-2 h-full">
+                  {[...Array(5)].map((_, i) => (
+                    <div key={i} className="flex flex-col gap-2">
+                      {[...Array(10)].map((_, j) => (
+                        <div
+                          key={j}
+                          className="w-1 h-1 rounded-full bg-[#0066CC]"
+                          style={{ opacity: 0.2 }}
+                        />
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Main large image */}
+              <div className="relative z-10 max-w-[600px] ml-auto">
                 <Image
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80"
                   alt="Business professional"
                   width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg object-cover h-[300px]"
+                  height={800}
+                  className="rounded-lg shadow-lg object-cover w-full h-[700px]"
                 />
               </div>
-              {/* Bottom Left Image */}
-              <div className="col-span-6 lg:col-span-5">
+
+              {/* Overlaid small image */}
+              <div className="absolute bottom-12 -left-12 z-20 w-[320px]">
                 <Image
-                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
                   alt="Team meeting"
-                  width={300}
-                  height={200}
-                  className="rounded-lg shadow-lg object-cover h-[200px]"
-                />
-              </div>
-              {/* Bottom Right Image */}
-              <div className="col-span-6 lg:col-span-5 lg:col-start-8">
-                <Image
-                  src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80"
-                  alt="Office work"
-                  width={300}
-                  height={200}
-                  className="rounded-lg shadow-lg object-cover h-[200px]"
+                  width={400}
+                  height={300}
+                  className="rounded-lg shadow-lg object-cover w-full h-[240px]"
                 />
               </div>
             </div>

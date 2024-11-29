@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { ArrowRight } from 'lucide-react'
+import heroImage from './assets/hero.png'; // Adjust the path relative to the file
+
 
 export function HeroSection() {
   return (
@@ -7,7 +9,7 @@ export function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80")',
+          backgroundImage: `url(/images/hero.png)`,
         }}
       />
       <div className="absolute inset-0 bg-black/40" />

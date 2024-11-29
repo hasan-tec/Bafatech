@@ -78,7 +78,11 @@ export function AboutSection() {
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="flex items-start space-x-4">
                 <div className="p-2 bg-[#0066CC]/10 rounded-lg">
-                  <DollarSign className="w-6 h-6 text-[#0066CC]" />
+                <img
+                  src="/images/moneyback.png" // Path from the public folder
+                  alt="Moneyback Icon"
+                  className="w-6 h-6"
+                />
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">100% Money Back</h4>
@@ -87,7 +91,11 @@ export function AboutSection() {
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-2 bg-[#0066CC]/10 rounded-lg">
-                  <Users className="w-6 h-6 text-[#0066CC]" />
+                <img
+                  src="/images/expert.png" // Path from the public folder
+                  alt="expert Icon"
+                  className="w-6 h-6"
+                />
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">Expert & Dedicated</h4>
@@ -96,7 +104,11 @@ export function AboutSection() {
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-2 bg-[#0066CC]/10 rounded-lg">
-                  <Headphones className="w-6 h-6 text-[#0066CC]" />
+                <img
+                  src="/images/support.png" // Path from the public folder
+                  alt="support Icon"
+                  className="w-6 h-6"
+                />
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">24/7 Free Technical</h4>
@@ -105,7 +117,11 @@ export function AboutSection() {
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-2 bg-[#0066CC]/10 rounded-lg">
-                  <Award className="w-6 h-6 text-[#0066CC]" />
+                <img
+                  src="/images/customersatisfaction.png" // Path from the public folder
+                  alt="customersatisfaction Icon"
+                  className="w-6 h-6"
+                />
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">100% Customers</h4>

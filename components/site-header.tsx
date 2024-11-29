@@ -22,7 +22,7 @@ export function SiteHeader() {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Image 
-              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9"
+              src="/images/BafaTech Logo.png"
               alt="AthensGuardia Logo" 
               width={200} 
               height={45}

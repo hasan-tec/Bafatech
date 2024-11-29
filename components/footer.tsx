@@ -35,7 +35,7 @@ export function Footer() {
           {/* Logo */}
           <Link href="/" className="inline-block">
             <Image
-              src="/bafatech-logo-white.svg"
+              src="/images/footer logo.png"
               alt="BafaTech Consulting"
               width={180}
               height={60}

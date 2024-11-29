@@ -2,26 +2,26 @@ import { Shield, Scan, Database, AlertTriangle } from 'lucide-react'
 
 const solutions = [
   {
-    icon: Shield,
+    icon: '/images/Threat.png', // Path to the custom image
     title: 'Threat Intelligence Platform',
-    description: 'Collects threat intelligence and integrates it into AthenGuardia RBVM for proactive risk management.'
+    description: 'Collects threat intelligence and integrates it into AthenGuardia RBVM for proactive risk management.',
   },
   {
-    icon: Scan,
+    icon: '/images/Threat.png', // Path to the custom image
     title: 'AthenGuardia Scan',
-    description: 'Scans assets on-premises, in the cloud, and through agent-based solutions for complete visibility.'
+    description: 'Scans assets on-premises, in the cloud, and through agent-based solutions for complete visibility.',
   },
   {
-    icon: Database,
+    icon: '/images/Threat.png', // Path to the custom image
     title: 'Enterprise Asset Management',
-    description: 'Track and manage your assets with AthenGuardia EAM, reducing downtime and enhancing efficiency.'
+    description: 'Track and manage your assets with AthenGuardia EAM, reducing downtime and enhancing efficiency.',
   },
   {
-    icon: AlertTriangle,
+    icon: '/images/Threat.png', // Path to the custom image
     title: 'Risk-Based Vulnerability Management',
-    description: 'AthenGuardia RBVM identifies, prioritizes, and addresses vulnerabilities based on risk.'
-  }
-]
+    description: 'AthenGuardia RBVM identifies, prioritizes, and addresses vulnerabilities based on risk.',
+  },
+];
 
 export function SolutionsSection() {
   return (
@@ -40,12 +40,17 @@ export function SolutionsSection() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {solutions.map((solution, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="bg-white rounded-lg shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-xl"
             >
               <div className="w-16 h-16 bg-[#E6F0FF] rounded-full flex items-center justify-center mb-6">
-                <solution.icon className="w-8 h-8 text-[#0066CC]" />
+                {/* Replace icon component with an img tag */}
+                <img
+                  src={solution.icon}
+                  alt={`${solution.title} Icon`}
+                  className="w-8 h-8"
+                />
               </div>
               <h3 className="text-xl font-bold text-[#001B45] mb-4">{solution.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{solution.description}</p>
@@ -55,6 +60,6 @@ export function SolutionsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
