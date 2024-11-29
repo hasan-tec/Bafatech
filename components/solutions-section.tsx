@@ -1,23 +1,23 @@
-import { Shield, Scan, Database, AlertTriangle } from 'lucide-react'
+import Image from 'next/image'
 
 const solutions = [
   {
-    icon: '/images/Threat.png', // Path to the custom image
+    icon: '/images/Threat.png',
     title: 'Threat Intelligence Platform',
     description: 'Collects threat intelligence and integrates it into AthenGuardia RBVM for proactive risk management.',
   },
   {
-    icon: '/images/Threat.png', // Path to the custom image
+    icon: '/images/Threat.png',
     title: 'AthenGuardia Scan',
     description: 'Scans assets on-premises, in the cloud, and through agent-based solutions for complete visibility.',
   },
   {
-    icon: '/images/Threat.png', // Path to the custom image
+    icon: '/images/Threat.png',
     title: 'Enterprise Asset Management',
     description: 'Track and manage your assets with AthenGuardia EAM, reducing downtime and enhancing efficiency.',
   },
   {
-    icon: '/images/Threat.png', // Path to the custom image
+    icon: '/images/Threat.png',
     title: 'Risk-Based Vulnerability Management',
     description: 'AthenGuardia RBVM identifies, prioritizes, and addresses vulnerabilities based on risk.',
   },
@@ -45,13 +45,15 @@ export function SolutionsSection() {
               className="bg-white rounded-lg shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-xl"
             >
               <div className="w-16 h-16 bg-[#E6F0FF] rounded-full flex items-center justify-center mb-6">
-                {/* Replace icon component with an img tag */}
-                <img
+                <Image
                   src={solution.icon}
                   alt={`${solution.title} Icon`}
-                  className="w-8 h-8"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
                 />
               </div>
+              
               <h3 className="text-xl font-bold text-[#001B45] mb-4">{solution.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{solution.description}</p>
               <div className="w-12 h-1 bg-[#0066CC]" />

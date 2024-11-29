@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const services = [
   {
@@ -59,11 +60,12 @@ export function ServicesSection() {
               className="bg-white rounded-2xl p-8 relative group hover:shadow-xl transition-shadow"
             >
               <div className="flex justify-between items-start mb-8">
-                {/* Replace the Lucide-react icons with custom images */}
                 <div className="w-12 h-12 bg-[#0066CC]/10 rounded-lg flex items-center justify-center">
-                  <img
+                  <Image
                     src={service.icon}
                     alt={`${service.title} Icon`}
+                    width={24}
+                    height={24}
                     className="w-6 h-6"
                   />
                 </div>
@@ -101,3 +103,4 @@ export function ServicesSection() {
     </section>
   );
 }
+

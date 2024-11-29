@@ -4,7 +4,6 @@ import Link from 'next/link'
 export function PartnerSection() {
   return (
     <section className="relative bg-[#001B45] py-24 md:py-32">
-      {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#001B45]/50 to-[#001B45] pointer-events-none" />
       
       <div className="relative container mx-auto px-4 lg:px-8">
@@ -13,7 +12,7 @@ export function PartnerSection() {
             Partner With Us
           </h2>
           <p className="text-lg md:text-xl text-white/90 leading-relaxed">
-            Whether you're a small business managing assets or an enterprise needing help to prioritize vulnerabilities for patching, we're here to guide you every step of the way.
+            Whether you&apos;re a small business managing assets or an enterprise needing help to prioritize vulnerabilities for patching, we&apos;re here to guide you every step of the way.
           </p>
           <div className="pt-4">
             <Link

@@ -11,7 +11,7 @@ export function ContactForm() {
             {/* Form Section */}
             <div className="lg:col-span-2 space-y-8">
               <h2 className="text-3xl font-bold text-[#001B45]">
-                Let's Work Together
+                Let&apos;s Work Together
               </h2>
               <form className="grid gap-6">
                 <div className="grid sm:grid-cols-2 gap-6">
@@ -69,7 +69,7 @@ export function ContactForm() {
             {/* Contact Info */}
             <div className="bg-[#0066CC] text-white rounded-xl p-8">
               <h3 className="text-2xl font-bold mb-8">
-                Don't Forget to Contact Us
+                <p>Don&apos;t hesitate to reach out</p>
               </h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">

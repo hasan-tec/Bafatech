@@ -1,7 +1,5 @@
 import Link from "next/link"
 import { ArrowRight } from 'lucide-react'
-import heroImage from './assets/hero.png'; // Adjust the path relative to the file
-
 
 export function HeroSection() {
   return (
