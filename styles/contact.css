@@ -1,0 +1,18 @@
+.contact-pattern {
+  background-image: radial-gradient(#0066CC 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.contact-curve {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0066CC 0%, transparent 100%);
+  opacity: 0.1;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.form-focus-ring {
+  --tw-ring-color: rgba(0, 102, 204, 0.2);
+}
+

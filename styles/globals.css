@@ -1,0 +1,18 @@
+@layer utilities {
+  .clip-curve {
+    clip-path: path('M 0 400 C 0 400, 400 400, 400 0 C 400 0, 0 0, 0 0 Z');
+  }
+  
+  .glow-effect {
+    --glow-color: rgba(0, 102, 204, 0.3);
+    background: radial-gradient(circle at bottom right, var(--glow-color), transparent 70%);
+    filter: blur(60px);
+  }
+}
+
+/* Enhanced font display */
+.font-display {
+  font-family: 'CustomDisplay', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+}
+
