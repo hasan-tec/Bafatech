@@ -51,7 +51,7 @@ export function WhyChooseSection() {
                 Contact Now
               </Link>
               <Image 
-                src="https://images.unsplash.com/photo-1700000000000-abc123?w=80&h=40&q=80&fit=crop&auto=format"
+                src="/images/choose_pic_arrow.png"
                 alt="Decorative arrow" 
                 width={80} 
                 height={40}
