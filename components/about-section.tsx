@@ -11,8 +11,8 @@ export function AboutSection() {
           {/* Left side with images and counter */}
           <div className="relative">
             {/* Experience Counter */}
-            <div className="absolute top-0 left-0 z-10 bg-[#0066CC] text-white p-8 rounded-2xl text-center w-[200px] shadow-lg">
-              <div className="text-5xl font-bold mb-2">22+</div>
+            <div className="absolute top-0 left-0 z-20 bg-[#0099FF] text-white p-12 rounded-2xl text-center w-48 shadow-lg">
+              <div className="text-6xl font-bold mb-2">22+</div>
               <div className="text-sm font-medium leading-snug">
                 Years Of
                 <br />
@@ -21,30 +21,37 @@ export function AboutSection() {
             </div>
             
             {/* Images Grid */}
-            <div className="relative pl-12 pt-24">
-              {/* Top Image */}
-              <div className="relative z-20 ml-auto w-[80%]">
+            <div className="relative w-full h-[600px]">
+              {/* Main (Tall) Image */}
+              <div className="absolute right-0 top-0 w-2/3 h-full">
                 <Image
                   src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
                   alt="Team collaboration"
-                  width={500}
-                  height={300}
-                  className="rounded-2xl shadow-md w-full h-[280px] object-cover"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-2xl shadow-md"
                 />
               </div>
               
-              {/* Bottom Image */}
-              <div className="relative z-20 -mt-12 w-[75%]">
+              {/* Overlapping Image */}
+              <div className="absolute left-0 bottom-0 w-3/5 h-64">
                 <Image
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&q=80"
+                  src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&q=80"
                   alt="Office meeting"
-                  width={500}
-                  height={300}
-                  className="rounded-2xl shadow-md w-full h-[280px] object-cover"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-2xl shadow-md"
                 />
+              </div>
+              {/* Decorative Dots */}
+              <div className="absolute bottom-4 right-4 grid grid-cols-8 gap-2 z-10">
+                {[...Array(24)].map((_, i) => (
+                  <div key={i} className="w-1.5 h-1.5 rounded-full bg-primary/20" />
+                ))}
               </div>
             </div>
           </div>
+        
 
           {/* Right side content */}
           <div className="space-y-8">

@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronDown, Search } from 'lucide-react'
+import { ChevronDown} from 'lucide-react'
 import { useState } from "react"
 
 export function SiteHeader() {
@@ -62,12 +62,12 @@ export function SiteHeader() {
             ))}
           </nav>
 
-          <button 
-            className="p-3 hover:bg-gray-100 rounded-full transition-colors"
-            aria-label="Search"
-          >
-            <Search className="h-5 w-5 text-navy" />
-          </button>
+          <Link 
+        href="/get-quote"
+        className="bg-[#006CB0] text-white px-6 py-2.5 rounded-md font-nunito text-base font-semibold hover:bg-[#005a91] transition-colors"
+      >
+        Get A Quote
+      </Link>
 
           {/* Mobile Navigation Button */}
           <button className="md:hidden p-2" aria-label="Menu">
