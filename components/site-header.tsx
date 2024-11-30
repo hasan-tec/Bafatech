@@ -51,7 +51,13 @@ export function SiteHeader() {
             >
               Contact Us
             </Link>
-            {['About Us', 'News', 'Industries'].map((item) => (
+            <Link 
+              href="/about"
+              className="font-nunito text-base font-semibold text-navy hover:text-primary transition-colors"
+            >
+              About Us
+            </Link>
+            {['News', 'Industries'].map((item) => (
               <Link 
                 key={item}
                 href={`/${item.toLowerCase().replace(' ', '-')}`} 

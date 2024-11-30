@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export function ContactHero() {
+export function AboutHero() {
   return (
     <section className="relative h-[600px] w-full">
       <div 
@@ -22,12 +22,12 @@ export function ContactHero() {
               Home
             </Link>
             <span className="text-sm">/</span>
-            <span className="font-nunito text-sm text-white">Contact Us</span>
+            <span className="font-nunito text-sm text-white">About Us</span>
           </nav>
           
           {/* Page Title */}
           <h1 className="font-rajdhani text-5xl sm:text-6xl md:text-7xl text-white font-bold tracking-tight">
-            Contact Us
+            About Us
           </h1>
         </div>
       </div>
