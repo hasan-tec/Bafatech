@@ -21,47 +21,61 @@ const solutions = [
     title: 'Risk-Based Vulnerability Management',
     description: 'AthenGuardia RBVM identifies, prioritizes, and addresses vulnerabilities based on risk.',
   },
-];
+]
 
 export function SolutionsSection() {
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden">
       {/* Background shapes */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-0 left-0 w-1/2 h-full bg-gray-100 transform -skew-x-12" />
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-100 transform skew-x-12" />
+      <div className="absolute inset-0 overflow-hidden">
+        <Image
+          src="/images/solution-bg.png"
+          alt="Background pattern"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          priority
+        />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16 md:mb-24">
-          <h3 className="text-[#0066CC] font-medium mb-4">Our Solutions</h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#001B45]">AthenGuardia Line</h2>
+        <div className="text-center mb-16">
+          <h3 className="font-rajdhani text-[#006CB0] text-[18px] font-[600] leading-[28px] tracking-wider uppercase mb-3">
+            Our Solutions
+          </h3>
+          <h2 className="font-rajdhani text-[42px] leading-[53.59px] font-[700] text-[#041424]">
+            AthenGuardia Line
+          </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 max-w-[1240px] mx-auto">
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg p-6 md:p-8 transition-all duration-300 hover:shadow-xl"
+              className="bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.05)] p-12 transition-all duration-300 text-center"
             >
-              <div className="w-16 h-16 bg-[#E6F0FF] rounded-full flex items-center justify-center mb-6">
+              <div className="mx-auto w-[72px] h-[72px] bg-[#E6F0FF] rounded-full flex items-center justify-center mb-6">
                 <Image
                   src={solution.icon}
                   alt={`${solution.title} Icon`}
-                  width={24}
-                  height={24}
-                  className="w-6 h-6"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8"
                 />
               </div>
               
-              <h3 className="text-xl font-bold text-[#001B45] mb-4">{solution.title}</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">{solution.description}</p>
-              <div className="w-12 h-1 bg-[#0066CC]" />
+              <h3 className="font-rajdhani text-[26px] leading-[32px] font-[700] text-[#041424] mb-3">
+                {solution.title}
+              </h3>
+              <p className="font-nunito text-[16px] leading-[24px] font-[400] text-[#686868] mb-6 max-w-[305px] mx-auto">
+                {solution.description}
+              </p>
+              <div className="mx-auto w-8 h-[2px] bg-[#006CB0]" />
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }
 

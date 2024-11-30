@@ -29,9 +29,20 @@ const navLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#001B45] py-16 md:py-24">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex flex-col items-center text-center space-y-12">
+    <footer className="relative bg-[#001B45] py-16 md:py-24 overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 w-full h-full"
+        style={{
+          background: `linear-gradient(to bottom, rgba(0,27,69,0.95), rgba(0,27,69,0.98)),`,
+          backgroundImage: `url('/images/footer.jpeg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+
+      <div className="relative container mx-auto px-4 lg:px-8">
+        <div className="flex flex-col items-center text-center space-y-10">
           {/* Logo */}
           <Link href="/" className="inline-block">
             <Image
@@ -39,22 +50,22 @@ export function Footer() {
               alt="BafaTech Consulting"
               width={180}
               height={60}
-              className="h-12 w-auto"
+              className="w-[180px] h-auto"
             />
           </Link>
 
           {/* Description */}
-          <p className="text-white/90 max-w-2xl text-base md:text-lg leading-relaxed">
+          <p className="font-nunito text-[16px] leading-[24px] text-white/90 max-w-[800px] mx-auto">
             We specialize in helping organizations manage cybersecurity risks by identifying, prioritizing, and mitigating vulnerabilities in their systems and applications.
           </p>
 
           {/* Social Links */}
-          <div className="flex items-center justify-center space-x-6">
+          <div className="flex items-center justify-center gap-6">
             {socialLinks.map((social, index) => (
               <Link
                 key={index}
                 href={social.href}
-                className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
                 aria-label={social.label}
               >
                 <social.icon className="w-5 h-5 text-white" />
@@ -68,7 +79,7 @@ export function Footer() {
               <Link
                 key={index}
                 href={link.href}
-                className="text-white/90 hover:text-white transition-colors text-sm md:text-base"
+                className="font-nunito text-[16px] text-white/90 hover:text-white transition-colors"
               >
                 {link.label}
               </Link>

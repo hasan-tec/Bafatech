@@ -44,7 +44,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ['CustomDisplay', 'sans-serif'],
+        rajdhani: ['Rajdhani', 'sans-serif'],
+        nunito: ['Nunito', 'sans-serif'],
       },
     },
   },

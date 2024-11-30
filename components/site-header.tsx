@@ -19,28 +19,35 @@ export function SiteHeader() {
       isScrolled ? 'bg-white shadow-md' : 'bg-white'
     }`}>
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+        <div className="flex h-24 items-center justify-between">
+          <Link href="/" className="flex items-center">
             <Image 
               src="/images/BafaTech Logo.png"
-              alt="AthensGuardia Logo" 
-              width={200} 
-              height={45}
-              className="h-10 w-auto"
+              alt="BafaTech Logo" 
+              width={260}
+              height={58}
+              className="h-14 w-auto"
+              priority
             />
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center justify-center flex-grow space-x-10">
+          <nav className="hidden md:flex items-center justify-center flex-grow space-x-12">
+            <Link 
+              href="/"
+              className="font-nunito text-base font-semibold text-navy hover:text-primary transition-colors"
+            >
+              Home
+            </Link>
             <div className="relative group">
-              <button className="flex items-center space-x-1.5 text-gray-800 hover:text-gray-900">
-                <span className="text-[15px] font-medium">Service</span>
-                <ChevronDown className="h-3.5 w-3.5 mt-0.5 opacity-70" />
+              <button className="flex items-center space-x-2 font-nunito text-base font-semibold text-navy hover:text-primary transition-colors">
+                <span>Service</span>
+                <ChevronDown className="h-4 w-4 opacity-80" />
               </button>
             </div>
             <Link 
               href="/contact"
-              className="text-[15px] font-medium text-gray-800 hover:text-gray-900"
+              className="font-nunito text-base font-semibold text-navy hover:text-primary transition-colors"
             >
               Contact Us
             </Link>
@@ -48,22 +55,23 @@ export function SiteHeader() {
               <Link 
                 key={item}
                 href={`/${item.toLowerCase().replace(' ', '-')}`} 
-                className="text-[15px] font-medium text-gray-800 hover:text-gray-900"
+                className="font-nunito text-base font-semibold text-navy hover:text-primary transition-colors"
               >
                 {item}
               </Link>
             ))}
           </nav>
+
           <button 
-            className="p-2.5 hover:bg-gray-100 rounded-full transition-colors"
+            className="p-3 hover:bg-gray-100 rounded-full transition-colors"
             aria-label="Search"
           >
-            <Search className="h-6 w-6 text-gray-800" />
+            <Search className="h-5 w-5 text-navy" />
           </button>
 
           {/* Mobile Navigation Button */}
           <button className="md:hidden p-2" aria-label="Menu">
-            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="h-6 w-6 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>

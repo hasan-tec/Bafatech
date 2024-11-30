@@ -22,10 +22,10 @@ export function WhyChooseSection() {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-6 max-w-xl">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#001B45] font-display leading-tight">
+              <h2 className="font-rajdhani text-[42px] leading-[53.59px] font-bold text-[#041424]">
                 Why Choose BafaTech Consulting?
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="font-nunito text-[16px] leading-[24px] font-normal text-[#686868]">
                 At BafaTech Consulting, we focus on delivering straightforward, effective cybersecurity solutions that solve real challenges. Our AthenGuardia product line is designed to support your security goals.
               </p>
             </div>
@@ -37,7 +37,7 @@ export function WhyChooseSection() {
                   <div className="text-[#0066CC] mt-1">
                     <ArrowRight className="h-5 w-5" />
                   </div>
-                  <span className="text-gray-700 leading-relaxed">{feature.text}</span>
+                  <span className="font-montserrat text-[16px] leading-[24px] font-medium text-[#686868]">{feature.text}</span>
                 </div>
               ))}
             </div>
@@ -46,7 +46,7 @@ export function WhyChooseSection() {
             <div className="pt-4 flex items-center space-x-8">
               <Link
                 href="/contact"
-                className="inline-flex items-center px-8 py-4 bg-[#0066CC] text-white rounded-md hover:bg-[#0052a3] transition-colors text-sm font-medium"
+                className="inline-flex items-center px-8 py-3 bg-[#0066CC] text-white rounded-[4px] hover:bg-[#0052a3] transition-colors font-montserrat text-[16px] font-medium"
               >
                 Contact Now
               </Link>

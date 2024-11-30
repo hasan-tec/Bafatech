@@ -47,16 +47,16 @@ export function AboutSection() {
           </div>
 
           
-  {/* Right side content */}
-  <div className="space-y-8">
+    {/* Right side content */}
+    <div className="space-y-8">
             <div className="space-y-6">
-              <h3 className="text-[#0066CC] font-medium tracking-wide uppercase">
+              <h3 className="text-primary font-rajdhani text-lg font-semibold tracking-wider uppercase mb-2">
                 ABOUT OUR COMPANY
               </h3>
-              <h2 className="text-3xl md:text-4xl font-bold font-display leading-tight">
+              <h2 className="text-navy font-rajdhani text-4xl md:text-5xl font-bold leading-tight mb-6">
                 Cybersecurity & Consulting: Outsmart Threats, Improve Operations.
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-custom font-nunito text-lg leading-relaxed">
                 We help organizations manage cybersecurity risks. We identify, prioritize, and
                 mitigate vulnerabilities across systems and applications. Our goal is to protect
                 your operations and enhance security without complexity.
@@ -64,41 +64,45 @@ export function AboutSection() {
             </div>
 
             {/* Features Grid */}
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div className="flex items-start space-x-4">
-                <div className="p-2 bg-[#0066CC]/10 rounded-lg">
-                  <DollarSign className="w-6 h-6 text-[#0066CC]" />
+            <div className="grid sm:grid-cols-2 gap-8">
+              <div className="flex items-start space-x-5">
+                <div className="p-3 bg-primary/10 rounded-xl">
+                  <img
+                    src="/images/moneyback.png"
+                    alt="Moneyback Icon"
+                    className="w-7 h-7"
+                  />
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">100% Money Back</h4>
-                  <p className="text-sm text-gray-600">Gaurentee</p>
+                  <h4 className="font-rajdhani text-lg font-bold text-navy mb-1">100% Money Back</h4>
+                  <p className="font-nunito text-gray-custom">Gaurentee</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-2 bg-[#0066CC]/10 rounded-lg">
-                  <Users className="w-6 h-6 text-[#0066CC]" />
+              <div className="flex items-start space-x-5">
+                <div className="p-3 bg-primary/10 rounded-xl">
+                  <Users className="w-7 h-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">Expert & Dedicated</h4>
-                  <p className="text-sm text-gray-600">Team Members</p>
+                  <h4 className="font-rajdhani text-lg font-bold text-navy mb-1">Expert & Dedicated</h4>
+                  <p className="font-nunito text-gray-custom">Team Members</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-2 bg-[#0066CC]/10 rounded-lg">
-                  <Headphones className="w-6 h-6 text-[#0066CC]" />
+              <div className="flex items-start space-x-5">
+                <div className="p-3 bg-primary/10 rounded-xl">
+                  <Headphones className="w-7 h-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">24/7 Free Technical</h4>
-                  <p className="text-sm text-gray-600">Supports</p>
+                  <h4 className="font-rajdhani text-lg font-bold text-navy mb-1">24/7 Free Technical</h4>
+                  <p className="font-nunito text-gray-custom">Supports</p>
                 </div>
               </div>
-              <div className="flex items-start space-x-4">
-                <div className="p-2 bg-[#0066CC]/10 rounded-lg">
-                  <Award className="w-6 h-6 text-[#0066CC]" />
+              <div className="flex items-start space-x-5">
+                <div className="p-3 bg-primary/10 rounded-xl">
+                  <Award className="w-7 h-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-medium mb-1">100% Customers</h4>
-                  <p className="text-sm text-gray-600">Satisfaction</p>
+                  <h4 className="font-rajdhani text-lg font-bold text-navy mb-1">100% Customers</h4>
+                  <p className="font-nunito text-gray-custom">Satisfaction</p>
                 </div>
               </div>
             </div>
@@ -106,11 +110,11 @@ export function AboutSection() {
             {/* Contact Button */}
             <Link
               href="/contact"
-              className="inline-flex items-center px-6 py-3 bg-[#0066CC] text-white rounded-md hover:bg-[#0052a3] transition-colors text-sm font-medium group"
+              className="inline-flex items-center px-8 py-4 bg-primary text-white rounded-lg hover:bg-blue-900 transition-colors font-rajdhani text-base font-semibold group"
             >
               Contact Us
-              <span className="ml-2 h-5 w-5 rounded-full bg-white/20 flex items-center justify-center">
-                <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
+              <span className="ml-3 h-6 w-6 rounded-full bg-white/20 flex items-center justify-center">
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
               </span>
             </Link>
           </div>
@@ -119,4 +123,3 @@ export function AboutSection() {
     </section>
   )
 }
-
