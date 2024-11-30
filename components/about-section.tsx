@@ -1,7 +1,7 @@
+// about-section.tsx
 import Image from 'next/image'
-import { ArrowRight, DollarSign, Users, Headphones, Award } from 'lucide-react'
+import { ArrowRight, Users, Headphones, Award } from 'lucide-react'
 import Link from 'next/link'
-
 
 export function AboutSection() {
   return (
@@ -46,9 +46,8 @@ export function AboutSection() {
             </div>
           </div>
 
-          
-    {/* Right side content */}
-    <div className="space-y-8">
+          {/* Right side content */}
+          <div className="space-y-8">
             <div className="space-y-6">
               <h3 className="text-primary font-rajdhani text-lg font-semibold tracking-wider uppercase mb-2">
                 ABOUT OUR COMPANY
@@ -67,15 +66,17 @@ export function AboutSection() {
             <div className="grid sm:grid-cols-2 gap-8">
               <div className="flex items-start space-x-5">
                 <div className="p-3 bg-primary/10 rounded-xl">
-                  <img
+                  <Image
                     src="/images/moneyback.png"
                     alt="Moneyback Icon"
+                    width={28}
+                    height={28}
                     className="w-7 h-7"
                   />
                 </div>
                 <div>
                   <h4 className="font-rajdhani text-lg font-bold text-navy mb-1">100% Money Back</h4>
-                  <p className="font-nunito text-gray-custom">Gaurentee</p>
+                  <p className="font-nunito text-gray-custom">Guarantee</p>
                 </div>
               </div>
               <div className="flex items-start space-x-5">

@@ -1,6 +1,7 @@
-import { ArrowRight, Database, Shield, Download } from 'lucide-react'
+// services-section.tsx
+import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
-import Image from 'next/image';
+import Image from 'next/image'
 
 const services = [
   {
@@ -29,13 +30,13 @@ const services = [
 export function ServicesSection() {
   return (
     <section className="relative bg-[#001B45] py-24">
-       {/* Background Image */}
-       <div className="absolute inset-0 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/images/ensuring-bg.png"
           alt="Background pattern"
-          layout="fill"
-          objectFit="cover"
+          fill
+          className="object-cover"
           quality={100}
           priority
         />
@@ -94,4 +95,3 @@ export function ServicesSection() {
     </section>
   )
 }
-
