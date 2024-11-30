@@ -5,22 +5,22 @@ const teamMembers = [
   {
     name: "Connie Diaz",
     position: "CEO & Founder",
-    image: "/images/team-1.png",
+    image: "/images/team-1.png.png",
   },
   {
     name: "James E. Huey",
     position: "Co-Founder",
-    image: "/images/team-2.png",
+    image: "/images/team-2.png.png",
   },
   {
     name: "Jone D. Alexon",
     position: "IT Expert",
-    image: "/images/team-3.png",
+    image: "/images/team-3.png.png",
   },
   {
     name: "June D. Vargas",
     position: "HR Manager",
-    image: "/images/team-4.png",
+    image: "/images/team-4.png.png",
   },
 ];
 
