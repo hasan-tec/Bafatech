@@ -5,22 +5,22 @@ const teamMembers = [
   {
     name: "Connie Diaz",
     position: "CEO & Founder",
-    image: "/images/team-1.png.png",
+    image: "https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "James E. Huey",
     position: "Co-Founder",
-    image: "/images/team-2.png.png",
+    image: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Jone D. Alexon",
     position: "IT Expert",
-    image: "/images/team-3.png.png",
+    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "June D. Vargas",
     position: "HR Manager",
-    image: "/images/team-4.png.png",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
