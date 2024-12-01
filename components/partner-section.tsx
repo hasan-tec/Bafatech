@@ -16,7 +16,7 @@ export function PartnerSection() {
           </p>
           <div className="pt-4">
             <Link
-              href="/partner"
+              href="/contact"
               className="inline-flex items-center px-6 py-3 bg-[#0066CC] hover:bg-[#0052a3] text-white rounded-md transition-colors text-sm font-medium group"
             >
               Become A Partner

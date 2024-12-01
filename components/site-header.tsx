@@ -46,20 +46,20 @@ export function SiteHeader() {
       isScrolled ? 'bg-white shadow-md' : 'bg-white'
     }`}>
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex h-16 sm:h-20 md:h-24 items-center justify-between">
+        <div className="flex h-24 sm:h-28 md:h-32 items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image 
               src="/images/BafaTech Logo.png"
               alt="BafaTech Logo" 
               width={260}
               height={58}
-              className="h-8 sm:h-10 md:h-14 w-auto"
+              className="h-12 sm:h-14 md:h-16 w-auto"
               priority
             />
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center justify-center flex-grow space-x-4 xl:space-x-8">
+          <nav className="hidden lg:flex items-center justify-end flex-grow space-x-4 xl:space-x-8">
             <Link 
               href="/"
               className="font-nunito text-sm xl:text-base font-semibold text-navy hover:text-primary transition-colors"
@@ -117,43 +117,36 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex items-center space-x-2 sm:space-x-4">
-            <Link 
-              href="/get-quote"
-              className="hidden lg:inline-flex bg-[#006CB0] text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-md font-nunito text-sm xl:text-base font-semibold hover:bg-[#005a91] transition-colors"
-            >
-              Get A Quote
-            </Link>
-
             {/* Mobile Navigation */}
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="lg:hidden">
-                  <Menu className="h-5 w-5 sm:h-6 sm:w-6 text-navy" />
+                <button className="lg:hidden">
+                  <Menu className="h-7 w-7 sm:h-10 sm:w-10 text-navy" />
                   <span className="sr-only">Toggle menu</span>
-                </Button>
+                </button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[280px] sm:w-[320px] md:w-[400px] p-0">
-                <nav className="flex flex-col space-y-4 p-6">
+              <SheetContent side="right" className="w-[320px] sm:w-[400px] md:w-[480px] p-0">
+                <nav className="flex flex-col space-y-6 p-6 pt-12">
                   <Link 
                     href="/"
-                    className="font-nunito text-base sm:text-lg font-semibold text-navy hover:text-primary transition-colors"
+                    className="font-nunito text-base sm:text-lg md:text-xl font-semibold text-navy hover:text-primary transition-colors"
                   >
                     Home
                   </Link>
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     <button
                       onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
-                      className="flex items-center justify-between w-full font-nunito text-base sm:text-lg font-semibold text-navy hover:text-primary transition-colors"
+                      className="flex items-center justify-between w-full font-nunito text-lg sm:text-xl font-semibold text-navy hover:text-primary transition-colors"
                     >
                       Service
-                      <ChevronDown className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                      <ChevronDown className={`h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
                     </button>
-                    <div className={`pl-4 space-y-3 ${isMobileServicesOpen ? 'block' : 'hidden'}`}>
+                    <div className={`pl-4 space-y-4 ${isMobileServicesOpen ? 'block' : 'hidden'}`}>
                       {services.map((service) => (
                         <Link
                           key={service}
                           href={`/services/${service.toLowerCase().replace(/\s+/g, '-')}`}
-                          className="block font-nunito text-sm sm:text-base text-navy hover:text-primary transition-colors py-1"
+                          className="block font-nunito text-base sm:text-lg text-navy hover:text-primary transition-colors"
                         >
                           {service}
                         </Link>
@@ -162,13 +155,13 @@ export function SiteHeader() {
                   </div>
                   <Link 
                     href="/contact"
-                    className="font-nunito text-base sm:text-lg font-semibold text-navy hover:text-primary transition-colors"
+                    className="font-nunito text-lg sm:text-xl font-semibold text-navy hover:text-primary transition-colors"
                   >
                     Contact Us
                   </Link>
                   <Link 
                     href="/about"
-                    className="font-nunito text-base sm:text-lg font-semibold text-navy hover:text-primary transition-colors"
+                    className="font-nunito text-lg sm:text-xl font-semibold text-navy hover:text-primary transition-colors"
                   >
                     About Us
                   </Link>
@@ -176,20 +169,21 @@ export function SiteHeader() {
                     <Link 
                       key={item}
                       href={`/${item.toLowerCase().replace(' ', '-')}`}
-                      className="font-nunito text-base sm:text-lg font-semibold text-navy hover:text-primary transition-colors"
+                      className="font-nunito text-lg sm:text-xl font-semibold text-navy hover:text-primary transition-colors"
                     >
                       {item}
                     </Link>
                   ))}
                   <Link 
                     href="/get-quote"
-                    className="inline-flex bg-[#006CB0] text-white px-6 py-2.5 rounded-md font-nunito text-base font-semibold hover:bg-[#005a91] transition-colors justify-center mt-4"
+                    className="inline-flex bg-[#006CB0] text-white px-8 py-3 rounded-md font-nunito text-lg font-semibold hover:bg-[#005a91] transition-colors justify-center mt-4"
                   >
                     Get A Quote
                   </Link>
                 </nav>
               </SheetContent>
             </Sheet>
+
           </div>
         </div>
       </div>
