@@ -115,7 +115,7 @@ export default function PatchManagementPage() {
               </Link>
               <span className="text-sm">›</span>
               <Link href="/about-us" className="font-nunito text-sm hover:text-white transition-colors">
-                About Us
+                Services
               </Link>
             </nav>
 

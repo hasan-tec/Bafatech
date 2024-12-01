@@ -46,7 +46,7 @@ export function SiteHeader() {
       isScrolled ? 'bg-white shadow-md' : 'bg-white'
     }`}>
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex h-24 sm:h-28 md:h-22 items-center justify-between">
+        <div className="flex h-[90px] sm:h-24 md:h-22 items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image 
               src="/images/BafaTech Logo.png"

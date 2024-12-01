@@ -54,16 +54,16 @@ export function WhyChooseSection() {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
-            <Link
-              href="/contact"
-              className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white rounded-lg hover:bg-blue-900 transition-colors font-rajdhani text-sm sm:text-base font-semibold group"
-            >
-              Contact Us
-              <span className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-white/20 flex items-center justify-center">
-                <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-0.5 transition-transform" />
-              </span>
-            </Link>
+            <div className="pt-4 sm:pt-6 flex sm:flex-row gap-4 sm:gap-8">
+              <Link
+                href="/contact"
+                className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white rounded-lg hover:bg-blue-900 transition-colors font-rajdhani text-sm sm:text-base font-semibold group"
+              >
+                Contact Us
+                <span className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-white/20 flex items-center justify-center">
+                  <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-0.5 transition-transform" />
+                </span>
+              </Link>
               <Image 
                 src="/images/choose_pic_arrow.png"
                 alt="Decorative arrow" 
@@ -123,6 +123,3 @@ export function WhyChooseSection() {
     </section>
   )
 }
-
-export default WhyChooseSection;
-
