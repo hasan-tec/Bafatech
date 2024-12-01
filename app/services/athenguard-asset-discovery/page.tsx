@@ -143,89 +143,90 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-12 md:py-16 bg-gray-50">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-            Features of AthenGuardia AssetDiscovery
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-3">
+<section className="py-12 md:py-16 bg-gray-50">
+  <div className="container mx-auto px-4 lg:px-8">
+    <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
+      Features of AthenGuardia AssetDiscovery
+    </h2>
+    <div className="space-y-6">
+      {features.map((feature, index) => (
+        <div key={index} className="flex items-start gap-3 max-w-3xl">
+          <div className="text-[#006CB0] mt-[6px] flex-shrink-0">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <span className="font-nunito text-sm md:text-base leading-relaxed text-[#686868]">
+              <strong className="block mb-1">{feature.title}</strong> 
+              {feature.description}
+            </span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* How it Fits into the Ecosystem Section */}
+<section className="py-12 md:py-16 bg-white">
+  <div className="container mx-auto px-4 lg:px-8">
+    <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
+      How AthenGuardia AssetDiscovery Fits into the Ecosystem
+    </h2>
+    <div className="space-y-12">
+      {ecosystemIntegration.map((integration, index) => (
+        <div key={index} className="max-w-3xl">
+          <h3 className="font-rajdhani text-2xl md:text-[28px] leading-tight font-bold text-[#041424] mb-4">
+            {integration.title}
+          </h3>
+          <div className="space-y-3">
+            {integration.items.map((item, itemIndex) => (
+              <div key={itemIndex} className="flex items-start gap-3">
                 <div className="text-[#006CB0] mt-[6px] flex-shrink-0">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
-                <div>
-                  <span className="font-nunito text-sm md:text-base leading-relaxed text-[#686868]">
-                    <strong>{feature.title}</strong> {feature.description}
-                  </span>
-                </div>
+                <span className="font-nunito text-sm md:text-base leading-relaxed text-[#686868]">{item}</span>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* How it Fits into the Ecosystem Section */}
-      <section className="py-12 md:py-16 bg-white">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-            How AthenGuardia AssetDiscovery Fits into the Ecosystem
-          </h2>
-          <div className="grid gap-8 md:grid-cols-2">
-            {ecosystemIntegration.map((integration, index) => (
-              <div key={index} className="mb-6 md:mb-0">
-                <h3 className="font-rajdhani text-2xl md:text-[28px] leading-tight font-bold text-[#041424] mb-4">
-                  {integration.title}
-                </h3>
-                <div className="space-y-3">
-                  {integration.items.map((item, itemIndex) => (
-                    <div key={itemIndex} className="flex items-start gap-3">
-                      <div className="text-[#006CB0] mt-[6px] flex-shrink-0">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                      <span className="font-nunito text-sm md:text-base leading-relaxed text-[#686868]">{item}</span>
-                    </div>
-                  ))}
+{/* How it Helps Organizations Section */}
+<section className="py-12 md:py-16 bg-gray-50">
+  <div className="container mx-auto px-4 lg:px-8">
+    <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
+      How AthenGuardia AssetDiscovery Helps Organizations
+    </h2>
+    <div className="space-y-12">
+      {categories.map((category, index) => (
+        <div key={index} className="max-w-3xl">
+          <h3 className="font-rajdhani text-2xl md:text-[28px] leading-tight font-bold text-[#041424] mb-4">
+            {category.title}
+          </h3>
+          <div className="space-y-3">
+            {category.items.map((item, itemIndex) => (
+              <div key={itemIndex} className="flex items-start gap-3">
+                <div className="text-[#006CB0] mt-[6px] flex-shrink-0">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </div>
+                <span className="font-nunito text-sm md:text-base leading-relaxed text-[#686868]">{item}</span>
               </div>
             ))}
           </div>
         </div>
-      </section>
-
-      {/* How it Helps Organizations Section */}
-      <section className="py-12 md:py-16 bg-gray-50">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-            How AthenGuardia AssetDiscovery Helps Organizations
-          </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map((category, index) => (
-              <div key={index} className="mb-6 md:mb-0">
-                <h3 className="font-rajdhani text-2xl md:text-[28px] leading-tight font-bold text-[#041424] mb-4">
-                  {category.title}
-                </h3>
-                <div className="space-y-3">
-                  {category.items.map((item, itemIndex) => (
-                    <div key={itemIndex} className="flex items-start gap-3">
-                      <div className="text-[#006CB0] mt-[6px] flex-shrink-0">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6 12L10 8L6 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                      </div>
-                      <span className="font-nunito text-sm md:text-base leading-relaxed text-[#686868]">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Why Choose Section */}
       <section className="py-12 md:py-16 bg-[#001B45] text-white text-center">

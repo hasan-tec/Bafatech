@@ -46,7 +46,7 @@ export default function IndustriesPage() {
         {/* Industries We Serve Section */}
         <section className="py-8 sm:py-12 md:py-16 container mx-auto px-4 lg:px-8">
           <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-5xl font-bold text-[#041424] mb-4 sm:mb-6">Industries We Serve</h2>
-          <p className="text-gray-600 mb-6 sm:mb-8 font-nunito text-base sm:text-lg leading-relaxed">
+          <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868] mb-4 sm:mb-6">
             AthenGuardia solutions are designed to adapt to the unique challenges of various industries. Whether you&apos;re managing digital assets, securing critical infrastructure, or ensuring compliance, our tools provide the flexibility and insight needed to protect your organization effectively.
           </p>
 

@@ -36,7 +36,7 @@ export function WhyChooseSection() {
               <h2 className="font-rajdhani text-4xl sm:text-5xl lg:text-6xl leading-tight font-bold text-[#041424]">
                 Why Choose BafaTech Consulting?
               </h2>
-              <p className="font-nunito text-base sm:text-lg leading-relaxed font-normal text-gray-600">
+              <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">
                 At BafaTech Consulting, we focus on delivering straightforward, effective cybersecurity solutions that solve real challenges. Our AthenGuardia product line is designed to support your security goals.
               </p>
             </div>
@@ -48,19 +48,22 @@ export function WhyChooseSection() {
                   <div className="text-[#0066CC] mt-1">
                     <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
                   </div>
-                  <span className="font-montserrat text-base sm:text-lg leading-relaxed font-medium text-gray-600">{feature.text}</span>
+                  <span className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">{feature.text}</span>
                 </div>
               ))}
             </div>
 
             {/* CTA Button */}
             <div className="pt-4 sm:pt-6 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
-              <Link
-                href="/contact"
-                className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#0066CC] text-white rounded hover:bg-[#0052a3] transition-colors font-montserrat text-base sm:text-lg font-medium"
-              >
-                Contact Now
-              </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white rounded-lg hover:bg-blue-900 transition-colors font-rajdhani text-sm sm:text-base font-semibold group"
+            >
+              Contact Us
+              <span className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-white/20 flex items-center justify-center">
+                <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-0.5 transition-transform" />
+              </span>
+            </Link>
               <Image 
                 src="/images/choose_pic_arrow.png"
                 alt="Decorative arrow" 

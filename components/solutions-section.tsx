@@ -4,31 +4,31 @@ import Link from 'next/link'
 const solutions = [
   {
     icon: '/images/Threat.png',
-    title: 'Asset Discovery',
+    title: 'AthenGuard Asset Discovery',
     description: 'Identifies assets across on-premises, cloud, and remote environments for a complete IT inventory.',
     href: '/services/athenguard-asset-discovery'
   },
   {
     icon: '/images/Threat.png',
-    title: 'Enterprise Asset Management',
+    title: 'AthenGuard Enterprise Asset Management',
     description: 'Track and manage your assets with AthenGuardia EAM, reducing downtime and enhancing efficiency.',
     href: '/services/athenguard-eam'
   },
   {
     icon: '/images/Threat.png',
-    title: 'AthenGuardia Scan',
+    title: 'AthenGuard AthenGuardia Scan',
     description: 'Scans assets on-premises, in the cloud, and through agent-based solutions for complete visibility.',
     href: '/services/athenguard-patch'
   },
   {
     icon: '/images/Threat.png',
-    title: 'Risk-Based Vulnerability Management',
+    title: 'AthenGuard Risk-Based Vulnerability Management',
     description: 'AthenGuardia RBVM identifies, prioritizes, and addresses vulnerabilities based on risk.',
     href: '/services/athenguard-rbvm'
   },
   {
     icon: '/images/Threat.png',
-    title: 'Threat Intelligence Platform',
+    title: 'AthenGuard Threat Intelligence Platform',
     description: 'Collects threat intelligence and integrates it into AthenGuardia RBVM for proactive risk management.',
     href: '/services/athenguard-tip'
   },

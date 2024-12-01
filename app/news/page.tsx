@@ -47,7 +47,7 @@ export default function NewsPage() {
         {/* Welcome Text */}
         <section className="py-8 sm:py-12 md:py-16 container mx-auto px-4 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 sm:mb-8 md:mb-12 font-rajdhani">News</h2>
-          <p className="text-center text-base sm:text-lg text-gray-600 max-w-4xl mx-auto font-nunito">
+          <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">
             Welcome to the AthenGuardia News page. Stay informed with the latest updates, product announcements, and industry insights. From groundbreaking features to thought leadership in cybersecurity, here&apos;s everything you need to know.
           </p>
         </section>

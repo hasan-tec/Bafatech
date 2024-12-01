@@ -61,7 +61,7 @@ export function AboutSection() {
               <h2 className="text-navy font-rajdhani text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 sm:mb-6">
                 Cybersecurity & Consulting: Outsmart Threats, Improve Operations.
               </h2>
-              <p className="text-gray-custom font-nunito text-base sm:text-lg leading-relaxed">
+              <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">
                 We help organizations manage cybersecurity risks. We identify, prioritize, and
                 mitigate vulnerabilities across systems and applications. Our goal is to protect
                 your operations and enhance security without complexity.
@@ -81,8 +81,8 @@ export function AboutSection() {
                   />
                 </div>
                 <div>
-                  <h4 className="font-rajdhani text-base sm:text-lg font-bold text-navy mb-1">100% Money Back</h4>
-                  <p className="font-nunito text-sm sm:text-base text-gray-custom">Guarantee</p>
+                  <h4 className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">100% Money Back</h4>
+                  <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">Guarantee</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 sm:space-x-5">
@@ -90,8 +90,8 @@ export function AboutSection() {
                   <Users className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-rajdhani text-base sm:text-lg font-bold text-navy mb-1">Expert & Dedicated</h4>
-                  <p className="font-nunito text-sm sm:text-base text-gray-custom">Team Members</p>
+                  <h4 className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">Expert & Dedicated</h4>
+                  <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">Team Members</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 sm:space-x-5">
@@ -99,8 +99,8 @@ export function AboutSection() {
                   <Headphones className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-rajdhani text-base sm:text-lg font-bold text-navy mb-1">24/7 Free Technical</h4>
-                  <p className="font-nunito text-sm sm:text-base text-gray-custom">Supports</p>
+                  <h4 className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">24/7 Free Technical</h4>
+                  <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">Supports</p>
                 </div>
               </div>
               <div className="flex items-start space-x-4 sm:space-x-5">
@@ -108,8 +108,8 @@ export function AboutSection() {
                   <Award className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-rajdhani text-base sm:text-lg font-bold text-navy mb-1">100% Customers</h4>
-                  <p className="font-nunito text-sm sm:text-base text-gray-custom">Satisfaction</p>
+                  <h4 className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">100% Customers</h4>
+                  <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">Satisfaction</p>
                 </div>
               </div>
             </div>

@@ -20,7 +20,9 @@ export function PartnerSection() {
               className="inline-flex items-center px-6 py-3 bg-[#0066CC] hover:bg-[#0052a3] text-white rounded-md transition-colors text-sm font-medium group"
             >
               Become A Partner
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
+              <span className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-white/20 flex items-center justify-center">
+                <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 group-hover:translate-x-0.5 transition-transform" />
+              </span>
             </Link>
           </div>
         </div>
