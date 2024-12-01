@@ -1,36 +1,42 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const solutions = [
   {
     icon: '/images/Threat.png',
-    title: 'Threat Intelligence Platform',
-    description: 'Collects threat intelligence and integrates it into AthenGuardia RBVM for proactive risk management.',
-  },
-  {
-    icon: '/images/Threat.png',
-    title: 'AthenGuardia Scan',
-    description: 'Scans assets on-premises, in the cloud, and through agent-based solutions for complete visibility.',
+    title: 'Asset Discovery',
+    description: 'Identifies assets across on-premises, cloud, and remote environments for a complete IT inventory.',
+    href: '/services/athenguard-asset-discovery'
   },
   {
     icon: '/images/Threat.png',
     title: 'Enterprise Asset Management',
     description: 'Track and manage your assets with AthenGuardia EAM, reducing downtime and enhancing efficiency.',
+    href: '/services/athenguard-eam'
+  },
+  {
+    icon: '/images/Threat.png',
+    title: 'AthenGuardia Scan',
+    description: 'Scans assets on-premises, in the cloud, and through agent-based solutions for complete visibility.',
+    href: '/services/athenguard-patch'
   },
   {
     icon: '/images/Threat.png',
     title: 'Risk-Based Vulnerability Management',
     description: 'AthenGuardia RBVM identifies, prioritizes, and addresses vulnerabilities based on risk.',
+    href: '/services/athenguard-rbvm'
   },
   {
     icon: '/images/Threat.png',
-    title: 'Asset Discovery',
-    description: 'Identifies assets across on-premises, cloud, and remote environments for a complete IT inventory.',
+    title: 'Threat Intelligence Platform',
+    description: 'Collects threat intelligence and integrates it into AthenGuardia RBVM for proactive risk management.',
+    href: '/services/athenguard-tip'
   },
 ]
 
 export function SolutionsSection() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id='services' className="py-24 relative overflow-hidden">
       {/* Background shapes */}
       <div className="absolute inset-0 overflow-hidden bg-gray-200/50">
         <Image
@@ -57,9 +63,10 @@ export function SolutionsSection() {
           {/* Top 2x2 grid */}
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             {solutions.slice(0, 4).map((solution, index) => (
-              <div
+              <Link 
                 key={index}
-                className="bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.05)] p-12 transition-all duration-300 text-center"
+                href={solution.href}
+                className="block bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.05)] p-12 transition-all duration-300 text-center hover:shadow-lg hover:-translate-y-1 cursor-pointer"
               >
                 <div className="mx-auto w-[72px] h-[72px] bg-[#E6F0FF] rounded-full flex items-center justify-center mb-6">
                   <Image
@@ -78,13 +85,16 @@ export function SolutionsSection() {
                   {solution.description}
                 </p>
                 <div className="mx-auto w-8 h-[2px] bg-[#006CB0]" />
-              </div>
+              </Link>
             ))}
           </div>
 
           {/* Bottom centered card */}
           <div className="grid md:grid-cols-1 gap-6">
-            <div className="bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.05)] p-12 transition-all duration-300 text-center max-w-[1000px] mx-auto">
+            <Link
+              href={solutions[4].href}
+              className="block bg-white rounded-[20px] shadow-[0px_4px_25px_0px_rgba(0,0,0,0.05)] p-12 transition-all duration-300 text-center max-w-[1000px] mx-auto hover:shadow-lg hover:-translate-y-1 cursor-pointer"
+            >
               <div className="mx-auto w-[72px] h-[72px] bg-[#E6F0FF] rounded-full flex items-center justify-center mb-6">
                 <Image
                   src={solutions[4].icon}
@@ -102,11 +112,10 @@ export function SolutionsSection() {
                 {solutions[4].description}
               </p>
               <div className="mx-auto w-8 h-[2px] bg-[#006CB0]" />
-            </div>
+            </Link>
           </div>
         </div>
       </div>
     </section>
   )
 }
-

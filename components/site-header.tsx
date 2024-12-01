@@ -5,7 +5,7 @@ import Image from "next/image"
 import { ChevronDown, Menu } from 'lucide-react'
 import { useState, useEffect, useRef } from "react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button"
+
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -46,14 +46,14 @@ export function SiteHeader() {
       isScrolled ? 'bg-white shadow-md' : 'bg-white'
     }`}>
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex h-24 sm:h-28 md:h-32 items-center justify-between">
+        <div className="flex h-24 sm:h-28 md:h-22 items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image 
               src="/images/BafaTech Logo.png"
               alt="BafaTech Logo" 
               width={260}
               height={58}
-              className="h-12 sm:h-14 md:h-16 w-auto"
+              className="h-16 sm:h-14 md:h-20 w-auto"
               priority
             />
           </Link>
@@ -174,12 +174,7 @@ export function SiteHeader() {
                       {item}
                     </Link>
                   ))}
-                  <Link 
-                    href="/get-quote"
-                    className="inline-flex bg-[#006CB0] text-white px-8 py-3 rounded-md font-nunito text-lg font-semibold hover:bg-[#005a91] transition-colors justify-center mt-4"
-                  >
-                    Get A Quote
-                  </Link>
+                 
                 </nav>
               </SheetContent>
             </Sheet>

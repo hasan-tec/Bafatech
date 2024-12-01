@@ -8,7 +8,7 @@ export function PartnerSection() {
       
       <div className="relative container mx-auto px-4 lg:px-8">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white font-display">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white font-display">
             Partner With Us
           </h2>
           <p className="text-lg md:text-xl text-white/90 leading-relaxed">

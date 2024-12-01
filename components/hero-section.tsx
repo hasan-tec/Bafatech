@@ -24,8 +24,8 @@ export function HeroSection() {
             Technology Solutions Specializing in Enterprise Asset Management (EAM), Risk-Based Vulnerability Management (RBVM), and Patch Management
           </p>
           <Link
-            href="/services"
-            className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary hover:bg-secondary text-white rounded-lg transition-colors font-rajdhani text-sm sm:text-base font-semibold group"
+            href="#services"
+            className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-primary hover:bg-blue-900 text-white rounded-lg transition-colors font-rajdhani text-sm sm:text-base font-semibold group"
           >
             Our Services
             <span className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 rounded-full bg-white/20 flex items-center justify-center">

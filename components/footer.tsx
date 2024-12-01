@@ -21,7 +21,7 @@ const socialLinks = [
 ]
 
 const navLinks = [
-  { href: "/services", label: "Services" },
+  { href: "#services", label: "Services" },
   { href: "/contact", label: "Contact Us" },
   { href: "/about", label: "About Us" },
   { href: "/privacy-terms", label: "Privacy & Terms" },
@@ -84,7 +84,7 @@ export function Footer() {
                 {link.label}
               </Link>
             ))}
-          </nav>
+          </nav>  
         </div>
       </div>
     </footer>
