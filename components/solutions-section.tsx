@@ -52,7 +52,7 @@ export function SolutionsSection() {
       <div className="container mx-auto px-4 relative z-10 bg-gray-100/10">
         <div className="flex justify-center items-center mb-8 px-4">
           <Image 
-            src="/images/logo.png"
+            src="/images/atthenlogo.png"
             
             alt="BafaTech Logo"   
             width={400}

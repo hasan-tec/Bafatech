@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const teamMembers = [
   {
-    name: "Connie Diaz",
+    name: "Joshua Akhimie",
     position: "CEO & Founder",
     image: "/images/Joshua Akhime.jpg",
   },
