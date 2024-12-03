@@ -104,7 +104,7 @@ export default function EnterpriseAssetManagementPage() {
               </Link>
               <span className="text-sm">›</span>
               <Link href="/products" className="font-nunito text-sm hover:text-white transition-colors">
-              Services
+              Products
               </Link>
             </nav>
 

@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Patch Management | AthenGuard",
-  description: "Professional patch management services for your organization",
+  description: "Professional patch management Products for your organization",
 }
 
 export default function PatchManagementPage() {
@@ -115,7 +115,7 @@ export default function PatchManagementPage() {
               </Link>
               <span className="text-sm">›</span>
               <Link href="/about-us" className="font-nunito text-sm hover:text-white transition-colors">
-                Services
+                Products
               </Link>
             </nav>
 

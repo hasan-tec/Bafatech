@@ -139,7 +139,7 @@ export function SiteHeader() {
                       onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
                       className="flex items-center justify-between w-full font-nunito text-lg sm:text-xl font-semibold text-navy hover:text-primary transition-colors"
                     >
-                      Service
+                      Products
                       <ChevronDown className={`h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200 ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
                     </button>
                     <div className={`pl-4 space-y-4 ${isMobileProductsOpen ? 'block' : 'hidden'}`}>
