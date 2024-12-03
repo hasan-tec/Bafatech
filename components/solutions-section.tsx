@@ -62,7 +62,7 @@ export function SolutionsSection() {
         </div>
         <div className="text-center mb-16">
          
-          <h2 className="font-rajdhani text-[42px] leading-[53.59px] font-[700] text-[#041424]">
+          <h2 className="font-rajdhani text-[50px] leading-[53.59px] font-[700] text-[#041424]">
             AthenGuard Line
           </h2>
         </div>

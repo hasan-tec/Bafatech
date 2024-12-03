@@ -335,5 +335,5 @@ const whyChooseAthenGuard = [
   "Stay ahead of threats with actionable insights from TIP.",
 ]
 
-IndustriesPage;
+
 
