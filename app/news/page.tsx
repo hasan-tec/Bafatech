@@ -48,7 +48,7 @@ export default function NewsPage() {
         <section className="py-8 sm:py-12 md:py-16 container mx-auto px-4 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-6 sm:mb-8 md:mb-12 font-rajdhani">News</h2>
           <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">
-            Welcome to the AthenGuardia News page. Stay informed with the latest updates, product announcements, and industry insights. From groundbreaking features to thought leadership in cybersecurity, here&apos;s everything you need to know.
+            Welcome to the AthenGuard News page. Stay informed with the latest updates, product announcements, and industry insights. From groundbreaking features to thought leadership in cybersecurity, here&apos;s everything you need to know.
           </p>
         </section>
 
@@ -60,20 +60,20 @@ export default function NewsPage() {
               <NewsCard
                 image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
                 date="November 20, 2024"
-                title="AthenGuardia Scan Enhances Asset Discovery for IoT Devices"
-                description="We&apos;re excited to announce an update to AthenGuardia Scan that now includes enhanced discovery capabilities for IoT devices. This feature ensures that organizations can track connected devices seamlessly across their environments, improving security and asset visibility."
+                title="AthenGuard Scan Enhances Asset Discovery for IoT Devices"
+                description="We&apos;re excited to announce an update to AthenGuard Scan that now includes enhanced discovery capabilities for IoT devices. This feature ensures that organizations can track connected devices seamlessly across their environments, improving security and asset visibility."
               />
               <NewsCard
                 image="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
                 date="November 20, 2024"
                 title="RBVM Adds Historical Vulnerability Trend Analysis"
-                description="Our AthenGuardia RBVM now includes historical trend analysis, enabling organizations to track vulnerability patterns over time. This feature provides actionable insights to help teams address recurring risks and enhance their long-term security posture."
+                description="Our AthenGuard RBVM now includes historical trend analysis, enabling organizations to track vulnerability patterns over time. This feature provides actionable insights to help teams address recurring risks and enhance their long-term security posture."
               />
               <NewsCard
                 image="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
                 date="November 20, 2024"
-                title="AthenGuardia TIP Now Supports Retail-Specific Threat Feeds"
-                description="AthenGuardia TIP has expanded its capabilities to include threat feeds tailored for the retail sector. This update addresses industry-specific risks, helping retail organizations stay ahead of evolving cyber threats."
+                title="AthenGuard TIP Now Supports Retail-Specific Threat Feeds"
+                description="AthenGuard TIP has expanded its capabilities to include threat feeds tailored for the retail sector. This update addresses industry-specific risks, helping retail organizations stay ahead of evolving cyber threats."
               />
             </div>
           </div>
@@ -88,13 +88,13 @@ export default function NewsPage() {
                 image="https://images.unsplash.com/photo-1553877522-43269d4ea984"
                 date="November 20, 2024"
                 title="BafaTech Consulting Named Cybersecurity Innovator of the Year"
-                description="We are honored to receive the &apos;Cybersecurity Innovator of the Year&apos; award for our work on the AthenGuardia product line. This recognition reflects our dedication to providing advanced solutions for asset management, vulnerability prioritization, and patching."
+                description="We are honored to receive the &apos;Cybersecurity Innovator of the Year&apos; award for our work on the AthenGuard product line. This recognition reflects our dedication to providing advanced solutions for asset management, vulnerability prioritization, and patching."
               />
               <NewsCard
                 image="https://images.unsplash.com/photo-1540317580384-e5d43616b9aa"
                 date="November 20, 2024"
-                title="AthenGuardia AssetDiscovery Launch Event"
-                description="The official launch of AthenGuardia AssetDiscovery was a resounding success. Attendees learned how our newest solution delivers unparalleled visibility across on-premises, cloud, and hybrid environments."
+                title="AthenGuard AssetDiscovery Launch Event"
+                description="The official launch of AthenGuard AssetDiscovery was a resounding success. Attendees learned how our newest solution delivers unparalleled visibility across on-premises, cloud, and hybrid environments."
               />
               <NewsCard
                 image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
@@ -114,14 +114,14 @@ export default function NewsPage() {
               <NewsCard
                 image="https://images.unsplash.com/photo-1451187580459-43490279c0fa"
                 date="November 20, 2024"
-                title="The Future of Patch Management: AthenGuardia Leads the Way"
-                description="With vulnerabilities increasing in complexity, patch management is more critical than ever. Discover how AthenGuardia Patch Management is automating updates and ensuring compliance for organizations worldwide."
+                title="The Future of Patch Management: AthenGuard Leads the Way"
+                description="With vulnerabilities increasing in complexity, patch management is more critical than ever. Discover how AthenGuard Patch Management is automating updates and ensuring compliance for organizations worldwide."
               />
               <NewsCard
                 image="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb"
                 date="November 20, 2024"
                 title="Adapting to AI in Cybersecurity"
-                description="As AI reshapes the cybersecurity landscape, businesses are turning to tools like AthenGuardia TIP for real-time, intelligent threat management. Learn how AI-driven solutions are transforming risk prioritization."
+                description="As AI reshapes the cybersecurity landscape, businesses are turning to tools like AthenGuard TIP for real-time, intelligent threat management. Learn how AI-driven solutions are transforming risk prioritization."
               />
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function NewsPage() {
                 </h2>
                 <div className="space-y-3 sm:space-y-4">
                   <p className="font-nunito text-sm sm:text-base text-gray-600 leading-relaxed">
-                    Our news highlights how AthenGuardia is at the forefront of cybersecurity innovation. From feature updates to strategic milestones, we remain committed to delivering solutions that help.
+                    Our news highlights how AthenGuard is at the forefront of cybersecurity innovation. From feature updates to strategic milestones, we remain committed to delivering solutions that help.
                   </p>
                   <p className="font-nunito text-sm sm:text-base text-gray-600 leading-relaxed">
                     Check back regularly for the latest updates. Let us help you stay ahead in the ever-changing world of cybersecurity.

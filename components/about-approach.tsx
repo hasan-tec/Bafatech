@@ -30,7 +30,7 @@ export function SecureApproachSection() {
           </div>
 
           {/* Features List */}
-          <div className="space-y-6 border-t border-gray-300 pt-6">
+          <div className="space-y-6  pt-6">
             {features.map((feature, index) => (
               <div
                 key={index}

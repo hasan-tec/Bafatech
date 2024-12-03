@@ -27,13 +27,13 @@ const features = [
   {
     title: "Seamless Integration",
     description:
-      "Integrates seamlessly with other AthenGuardia security solutions to provide a comprehensive security posture.",
+      "Integrates seamlessly with other AthenGuard security solutions to provide a comprehensive security posture.",
   },
 ];
 
 const ecosystemIntegration = [
   {
-    title: "AthenGuardia Vulnerability Management",
+    title: "AthenGuard Vulnerability Management",
     items: [
       "Prioritize vulnerabilities based on asset criticality and risk.",
       "Automate vulnerability remediation workflows.",
@@ -41,7 +41,7 @@ const ecosystemIntegration = [
     ],
   },
   {
-    title: "AthenGuardia Patch Management",
+    title: "AthenGuard Patch Management",
     items: [
       "Identify and manage software updates for all discovered assets.",
       "Automate patching processes to reduce vulnerabilities.", 
@@ -117,7 +117,7 @@ export default function Home() {
           </nav>
 
           <h1 className="font-rajdhani text-4xl sm:text-5xl md:text-6xl font-bold text-white">
-            AthenGuardia AssetDiscovery
+            AthenGuard AssetDiscovery
           </h1>
         </div>
       </section>
@@ -126,10 +126,10 @@ export default function Home() {
       <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-            What is AthenGuardia AssetDiscovery?
+            What is AthenGuard AssetDiscovery?
           </h2>
           <p className="font-nunito text-base md:text-[16px] leading-relaxed text-[#686868] mb-6 md:mb-8">
-            AthenGuardia AssetDiscovery is the foundation of visibility in your cybersecurity framework. It actively scans and identifies assets across on-premises environments, cloud infrastructure, and remote locations, ensuring a complete and up-to-date inventory of your IT environment. With real-time updates, it eliminates blind spots, providing the critical data needed for effective asset management and security operations.
+            AthenGuard AssetDiscovery is the foundation of visibility in your cybersecurity framework. It actively scans and identifies assets across on-premises environments, cloud infrastructure, and remote locations, ensuring a complete and up-to-date inventory of your IT environment. With real-time updates, it eliminates blind spots, providing the critical data needed for effective asset management and security operations.
           </p>
           <div className="relative h-[240px] sm:h-[300px] md:h-[360px] rounded-lg overflow-hidden">
             <Image
@@ -146,7 +146,7 @@ export default function Home() {
 <section className="py-12 md:py-16 bg-gray-50">
   <div className="container mx-auto px-4 lg:px-8">
     <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-      Features of AthenGuardia AssetDiscovery
+      Features of AthenGuard AssetDiscovery
     </h2>
     <div className="space-y-6">
       {features.map((feature, index) => (
@@ -172,7 +172,7 @@ export default function Home() {
 <section className="py-12 md:py-16 bg-white">
   <div className="container mx-auto px-4 lg:px-8">
     <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-      How AthenGuardia AssetDiscovery Fits into the Ecosystem
+      How AthenGuard AssetDiscovery Fits into the Ecosystem
     </h2>
     <div className="space-y-12">
       {ecosystemIntegration.map((integration, index) => (
@@ -202,7 +202,7 @@ export default function Home() {
 <section className="py-12 md:py-16 bg-gray-50">
   <div className="container mx-auto px-4 lg:px-8">
     <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-      How AthenGuardia AssetDiscovery Helps Organizations
+      How AthenGuard AssetDiscovery Helps Organizations
     </h2>
     <div className="space-y-12">
       {categories.map((category, index) => (
@@ -232,10 +232,10 @@ export default function Home() {
       <section className="py-12 md:py-16 bg-[#001B45] text-white text-center">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-5xl leading-tight font-bold mb-4 md:mb-6">
-            Why Choose AthenGuardia AssetDiscovery?
+            Why Choose AthenGuard AssetDiscovery?
           </h2>
           <p className="font-nunito text-base sm:text-lg md:text-[22px] leading-relaxed text-white/90 max-w-4xl mx-auto">
-            AthenGuardia AssetDiscovery ensures that you always know what&apos;s in your environment and where risks lie. By integrating seamlessly with the broader AthenGuardia suite, it provides the foundation for effective asset management, vulnerability prioritization, and patching.
+            AthenGuard AssetDiscovery ensures that you always know what&apos;s in your environment and where risks lie. By integrating seamlessly with the broader AthenGuard suite, it provides the foundation for effective asset management, vulnerability prioritization, and patching.
           </p>
         </div>
       </section>
@@ -293,7 +293,7 @@ export default function Home() {
                 Gain Complete Visibility into Your IT Environment
               </h2>
               <p className="font-nunito text-sm md:text-base leading-relaxed text-[#686868] mb-4 md:mb-6">
-                Whether you&apos;re a small business or a global enterprise, AthenGuardia AssetDiscovery delivers the visibility you need to protect your organization and achieve your security goals.
+                Whether you&apos;re a small business or a global enterprise, AthenGuard AssetDiscovery delivers the visibility you need to protect your organization and achieve your security goals.
               </p>
               <div className="space-y-3 md:space-y-4">
                 {[

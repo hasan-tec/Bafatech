@@ -5,8 +5,8 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Threat Intelligence Platform (TIP) | AthenGuardia",
-  description: "Enhance your security with actionable intelligence through AthenGuardia&apos;s Threat Intelligence Platform (TIP)",
+  title: "Threat Intelligence Platform (TIP) | AthenGuard",
+  description: "Enhance your security with actionable intelligence through AthenGuard&apos;s Threat Intelligence Platform (TIP)",
 }
 
 export default function ThreatIntelligencePlatformPage() {
@@ -25,7 +25,7 @@ export default function ThreatIntelligencePlatformPage() {
     },
     {
       title: "Integration with RBVM:",
-      description: "Feeds actionable threat intelligence directly into AthenGuardia RBVM for better prioritization."
+      description: "Feeds actionable threat intelligence directly into AthenGuard RBVM for better prioritization."
     },
     {
       title: "Threat Trends Analysis:",
@@ -136,7 +136,7 @@ export default function ThreatIntelligencePlatformPage() {
               What is TIP?
             </h2>
             <p className="font-nunito text-base sm:text-lg leading-relaxed text-[#686868] mb-8">
-              TIP (Threat Intelligence Platform) is a critical component of the AthenGuardia ecosystem. It collects, aggregates, and analyzes data from diverse threat intelligence sources to provide real-time insights into emerging threats. TIP empowers organizations to stay ahead of potential risks by delivering actionable intelligence that drives more intelligent decision-making in vulnerability management and patching processes.
+              TIP (Threat Intelligence Platform) is a critical component of the AthenGuard ecosystem. It collects, aggregates, and analyzes data from diverse threat intelligence sources to provide real-time insights into emerging threats. TIP empowers organizations to stay ahead of potential risks by delivering actionable intelligence that drives more intelligent decision-making in vulnerability management and patching processes.
             </p>
             <div className="relative h-[240px] sm:h-[300px] md:h-[360px] rounded-lg overflow-hidden">
               <Image
@@ -153,7 +153,7 @@ export default function ThreatIntelligencePlatformPage() {
         <section className="py-12 sm:py-16 bg-gray-50">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 sm:mb-8">
-              Features of AthenGuardia TIP
+              Features of AthenGuard TIP
             </h2>
             <div className="space-y-4">
               {features.map((feature, index) => (
@@ -202,29 +202,29 @@ export default function ThreatIntelligencePlatformPage() {
           </div>
         </section>
 
-        {/* How TIP Fits into the AthenGuardia Ecosystem Section */}
+        {/* How TIP Fits into the AthenGuard Ecosystem Section */}
         <section className="py-12 sm:py-16 bg-gray-50">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 sm:mb-8">
-              How TIP Fits into the AthenGuardia Ecosystem
+              How TIP Fits into the AthenGuard Ecosystem
             </h2>
             
             <div className="space-y-8 sm:space-y-12">
               {[
                 {
-                  title: "AthenGuardia RBVM",
+                  title: "AthenGuard RBVM",
                   description: "TIP feeds real-time intelligence into RBVM to contextualize vulnerabilities based on active exploits and attack patterns. Enables organizations to prioritize risks not just by severity but also by current threat activity."
                 },
                 {
-                  title: "AthenGuardia Scan",
+                  title: "AthenGuard Scan",
                   description: "Threat intelligence from TIP enhances scanned asset data, identifying those exposed to active threats. Provides guidance on which assets are at the greatest risk, streamlining mitigation efforts."
                 },
                 {
-                  title: "AthenGuardia Patch Management",
+                  title: "AthenGuard Patch Management",
                   description: "Helps prioritize patches for vulnerabilities linked to active exploits or significant threats. Ensures patches are applied strategically, focusing on the most urgent risks."
                 },
                 {
-                  title: "AthenGuardia EAM",
+                  title: "AthenGuard EAM",
                   description: "TIP informs asset criticality assessments by identifying high-value targets based on threat data. Provides insights into how threats impact asset relationships and dependencies."
                 }
               ].map((section, index) => (
@@ -263,7 +263,7 @@ export default function ThreatIntelligencePlatformPage() {
         <section className="py-12 sm:py-16 bg-white">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-[#041424] mb-6 sm:mb-8">
-              Benefits of AthenGuardia TIP
+              Benefits of AthenGuard TIP
             </h2>
             <div className="space-y-6">
               {benefits.map((benefit, index) => (
@@ -289,10 +289,10 @@ export default function ThreatIntelligencePlatformPage() {
         <section className="py-12 sm:py-16 bg-[#001B45] text-white text-center">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-5xl leading-tight font-bold mb-6">
-              Why Choose AthenGuardia TIP?
+              Why Choose AthenGuard TIP?
             </h2>
             <p className="font-nunito text-lg sm:text-xl md:text-2xl leading-relaxed text-white/90 max-w-6xl mx-auto">
-              AthenGuardia TIP isn&apos;t just about collecting threat data—it&apos;s about transforming that data into actionable intelligence that enhances your entire security ecosystem. By seamlessly integrating with AthenGuardia RBVM, EAM, and Patch Management, TIP ensures that your organization stays ahead of emerging threats and focuses its resources where they matter most.
+              AthenGuard TIP isn&apos;t just about collecting threat data—it&apos;s about transforming that data into actionable intelligence that enhances your entire security ecosystem. By seamlessly integrating with AthenGuard RBVM, EAM, and Patch Management, TIP ensures that your organization stays ahead of emerging threats and focuses its resources where they matter most.
             </p>
           </div>
         </section>
@@ -312,10 +312,10 @@ export default function ThreatIntelligencePlatformPage() {
               </div>
               <div className="lg:w-1/2">
                 <h2 className="font-rajdhani text-3xl sm:text-4xl md:text-[42px] leading-tight font-bold text-navy mb-6">
-                  Organizations of any size can rely on AthenGuardia TIP to:
+                  Organizations of any size can rely on AthenGuard TIP to:
                 </h2>
                 <p className="font-nunito text-sm sm:text-base leading-relaxed text-[#686868] mb-6">
-                  With AthenGuardia TIP, you&apos;re not just collecting threat data—you&apos;re building a stronger, more proactive defense against evolving cyber threats. Let our Threat Intelligence Platform work for your organization, no matter the size or complexity of your IT environment.
+                  With AthenGuard TIP, you&apos;re not just collecting threat data—you&apos;re building a stronger, more proactive defense against evolving cyber threats. Let our Threat Intelligence Platform work for your organization, no matter the size or complexity of your IT environment.
                 </p>
                 <div className="space-y-4">
                   {[

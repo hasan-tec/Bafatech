@@ -5,14 +5,14 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Risk-Based Vulnerability Management (RBVM) | AthenGuardia",
+  title: "Risk-Based Vulnerability Management (RBVM) | AthenGuard",
   description: "Comprehensive risk-based vulnerability management solution for organizations of all sizes",
 }
 
 export default function RBVMPage() {
   const features = [
     {
-      title: "AthenGuardia AssetDiscovery:",
+      title: "AthenGuard AssetDiscovery:",
       description: "Discovers and inventories assets across on-premises, cloud, and agent-based environments. This ensures the RBVM system has a complete view of all assets, enabling precise vulnerability mapping."
     },
     {
@@ -52,11 +52,11 @@ export default function RBVMPage() {
   const integrationSteps = [
     {
       title: "Asset Discovery",
-      description: "AthenGuardia AssetDiscovery identifies and inventories assets. This forms the foundation for effective vulnerability mapping. Without knowing what assets exist, you cannot effectively address vulnerabilities."
+      description: "AthenGuard AssetDiscovery identifies and inventories assets. This forms the foundation for effective vulnerability mapping. Without knowing what assets exist, you cannot effectively address vulnerabilities."
     },
     {
       title: "Vulnerability Data Integration",
-      description: "AthenGuardia RBVM ingests data from industry-leading solutions like Rapid7, Tenable, and Qualys. These tools excel at identifying vulnerabilities through scans. AthenGuardia takes this data and integrates it into its RBVM system, ensuring no critical information is overlooked."
+      description: "AthenGuard RBVM ingests data from industry-leading solutions like Rapid7, Tenable, and Qualys. These tools excel at identifying vulnerabilities through scans. AthenGuard takes this data and integrates it into its RBVM system, ensuring no critical information is overlooked."
     },
     {
       title: "Threat Intelligence Analysis",
@@ -64,7 +64,7 @@ export default function RBVMPage() {
     },
     {
       title: "Holistic Risk Assessment",
-      description: "With data from AthenGuardia AssetDiscovery, vulnerability management tools, and TIP, the RBVM system provides a holistic, prioritized view of your vulnerabilities, enabling targeted and effective risk mitigation."
+      description: "With data from AthenGuard AssetDiscovery, vulnerability management tools, and TIP, the RBVM system provides a holistic, prioritized view of your vulnerabilities, enabling targeted and effective risk mitigation."
     }
   ];
 
@@ -136,7 +136,7 @@ export default function RBVMPage() {
               What is Risk-Based Vulnerability Management?
             </h2>
             <p className="font-nunito text-base md:text-lg leading-relaxed text-[#686868] mb-6 md:mb-8">
-              Risk-Based Vulnerability Management (RBVM) is an advanced approach to identifying, prioritizing, and mitigating security vulnerabilities based on their potential impact and likelihood of exploitation. AthenGuardia RBVM combines asset discovery, vulnerability data integration, and threat intelligence to provide a comprehensive view of your organization&apos;s security posture.
+              Risk-Based Vulnerability Management (RBVM) is an advanced approach to identifying, prioritizing, and mitigating security vulnerabilities based on their potential impact and likelihood of exploitation. AthenGuard RBVM combines asset discovery, vulnerability data integration, and threat intelligence to provide a comprehensive view of your organization&apos;s security posture.
             </p>
             <div className="relative h-[240px] md:h-[360px] rounded-lg overflow-hidden">
               <Image
@@ -153,7 +153,7 @@ export default function RBVMPage() {
         <section className="py-12 md:py-16 bg-gray-50">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl md:text-4xl lg:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-              Features of AthenGuardia RBVM
+              Features of AthenGuard RBVM
             </h2>
             <div className="space-y-4">
               {features.map((feature, index) => (
@@ -231,10 +231,10 @@ export default function RBVMPage() {
         <section className="py-16 bg-[#001B45] text-white text-center">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-5xl leading-[52px] font-bold mb-6">
-              Why Choose AthenGuardia RBVM?
+              Why Choose AthenGuard RBVM?
             </h2>
             <p className= "font-nunito text-[22px] leading-[32px] text-white/90 max-w-6xl mx-auto">
-            AthenGuardia RBVM goes beyond traditional vulnerability management. Integrating with leading solutions like Rapid7, Tenable, and Qualys ensures your vulnerability data is accurate and up-to-date. Combined with AthenGuardia Scan for asset discovery and TIP for threat intelligence, it provides a comprehensive solution for managing and reducing risks.
+            AthenGuard RBVM goes beyond traditional vulnerability management. Integrating with leading solutions like Rapid7, Tenable, and Qualys ensures your vulnerability data is accurate and up-to-date. Combined with AthenGuard Scan for asset discovery and TIP for threat intelligence, it provides a comprehensive solution for managing and reducing risks.
           </p>
         </div>
       </section>
@@ -289,10 +289,10 @@ export default function RBVMPage() {
 
               <div className="w-full lg:w-5/12">
                 <h2 className="font-rajdhani text-3xl md:text-4xl lg:text-[42px] leading-tight font-bold text-navy mb-4 md:mb-6">
-                  Empower Your Organization with AthenGuardia RBVM
+                  Empower Your Organization with AthenGuard RBVM
                 </h2>
                 <p className="font-nunito text-sm md:text-base leading-relaxed text-[#686868] mb-4 md:mb-6">
-                  Instead of being overwhelmed by data, AthenGuardia RBVM helps you focus on the vulnerabilities that matter most. Whether you&apos;re a small business or a large enterprise, it empowers your team to take proactive steps to secure your organization.
+                  Instead of being overwhelmed by data, AthenGuard RBVM helps you focus on the vulnerabilities that matter most. Whether you&apos;re a small business or a large enterprise, it empowers your team to take proactive steps to secure your organization.
                 </p>
                 <div className="space-y-4">
                   {[

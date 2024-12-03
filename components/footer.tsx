@@ -21,7 +21,7 @@ const socialLinks = [
 ]
 
 const navLinks = [
-  { href: "#services", label: "Services" },
+  { href: "#Products", label: "Products" },
   { href: "/contact", label: "Contact Us" },
   { href: "/about", label: "About Us" },
   { href: "/privacy-terms", label: "Privacy & Terms" },

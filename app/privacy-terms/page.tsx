@@ -394,31 +394,31 @@ export default function Home() {
         </section>
 
         {/* Navigation Tabs */}
-        <section className="bg-gray-50 border-b border-gray-200 ">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="flex space-x-8 overflow-x-auto">
-              {["Privacy Policy", "Cookie Policy", "Terms of Use"].map((tab) => (
-                <a
-                  key={tab}
-                  href={`#${tab.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="py-4 border-b-2 border-transparent hover:border-[#006CB0] text-gray-600 hover:text-[#006CB0] font-nunito whitespace-nowrap transition-colors"
-                >
-                  {tab}
-                </a>
-              ))}
-            </div>
+      <section className="bg-gray-50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex justify-center py-4 space-x-8 overflow-x-auto">
+            {["Privacy Policy", "Cookie Policy", "Terms of Use"].map((tab) => (
+              <a
+                key={tab}
+                href={`#${tab.toLowerCase().replace(/\s+/g, '-')}`}
+                className="py-4 text-gray-600 hover:text-[#006CB0] font-nunito whitespace-nowrap transition-colors"
+              >
+                {tab}
+              </a>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Last Updated Section */}
-        <section className="py-8 bg-white">
+        <section className="py-8  bg-white">
           <div className="container mx-auto px-4 lg:px-8">
-            <p className="font-nunito text-gray-600">Last Updated: 2024</p>
+            <p className="font-nunito flex justify-center text-gray-600">Last Updated: 2024</p>
           </div>
         </section>
 
         {/* Privacy Policy */}
-        <div id="privacy-policy" className="border-t border-gray-200">
+        <div id="privacy-policy" className="">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl sm:text-4xl font-bold text-[#041424] py-8">
               Privacy Policy
@@ -427,7 +427,7 @@ export default function Home() {
               <section 
                 key={section.id}
                 id={section.id}
-                className="py-12 border-b border-gray-200 last:border-0"
+                className="py-12      last:border-0"
               >
                 <h3 className="font-rajdhani text-2xl font-bold text-[#041424] mb-6">
                   {section.title}
@@ -490,7 +490,7 @@ export default function Home() {
         </div>
 
         {/* Cookie Policy */}
-        <div id="cookie-policy" className="border-t border-gray-200 bg-gray-50">
+        <div id="cookie-policy" className="       bg-gray-50">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl sm:text-4xl font-bold text-[#041424] py-8">
               Cookie Policy
@@ -499,7 +499,7 @@ export default function Home() {
               <section
                 key={section.id}
                 id={section.id}
-                className="py-12 border-b border-gray-200 last:border-0"
+                className="py-12       last:border-0"
               >
                 <h3 className="font-rajdhani text-2xl font-bold text-[#041424] mb-6">
                   {section.title}
@@ -554,7 +554,7 @@ export default function Home() {
                         </thead>
                         <tbody>
                           {section.partners.map((partner, index) => (
-                            <tr key={index} className="border-t border-gray-200">
+                            <tr key={index} className="      ">
                               <td className="py-3 px-4 font-nunito text-[#686868]">{partner.service}</td>
                               <td className="py-3 px-4 font-nunito text-[#686868]">{partner.purpose}</td>
                               <td className="py-3 px-4 font-nunito">
@@ -573,7 +573,7 @@ export default function Home() {
         </div>
 
         {/* Terms of Use */}
-        <div id="terms-of-use" className="border-t border-gray-200">
+        <div id="terms-of-use" className="      ">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl sm:text-4xl font-bold text-[#041424] py-8">
               Terms of Use
@@ -582,7 +582,7 @@ export default function Home() {
               <section
                 key={section.id}
                 id={section.id}
-                className="py-12 border-b border-gray-200 last:border-0"
+                className="py-12       last:border-0"
               >
                 <h3 className="font-rajdhani text-2xl font-bold text-[#041424] mb-6">
                   {section.title}

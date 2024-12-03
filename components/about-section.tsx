@@ -10,14 +10,14 @@ export function AboutSection() {
           {/* Left side with images and counter */}
           <div className="relative">
             {/* Experience Counter */}
-            <div className="absolute top-0 left-0 z-20 bg-[#0099FF] text-white p-6 sm:p-8 md:p-12 rounded-2xl text-center w-36 sm:w-40 md:w-48 shadow-lg">
+            {/* <div className="absolute top-0 left-0 z-20 bg-[#0099FF] text-white p-6 sm:p-8 md:p-12 rounded-2xl text-center w-36 sm:w-40 md:w-48 shadow-lg">
               <div className="text-4xl sm:text-5xl md:text-6xl font-bold mb-1 sm:mb-2">22+</div>
               <div className="text-xs sm:text-sm font-medium leading-snug">
                 Years Of
                 <br />
                 Experiences
               </div>
-            </div>
+            </div> */}
             
             {/* Images Grid */}
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">

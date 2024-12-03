@@ -8,21 +8,21 @@ const services = [
     id: "01",
     title: "Enterprise Asset Management",
     description: "Real-time asset tracking with predictive insights",
-    href: "/services/enterprise-asset-management",
+    href: "/Products/enterprise-asset-management",
     icon: "/images/Ensuring.png"
   },
   {
     id: "02",
     title: "Risk-based management",
     description: "AI-powered risk prioritization and remediation.",
-    href: "/services/risk-based-management",
+    href: "/Products/risk-based-management",
     icon: "/images/Ensuring.png"
   },
   {
     id: "03",
     title: "Patch Management",
     description: "Automated patching for compliance and threat protection.",
-    href: "/services/patch-management",
+    href: "/Products/patch-management",
     icon: "/images/Ensuring.png"
   }
 ]

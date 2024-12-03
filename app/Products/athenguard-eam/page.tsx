@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Enterprise Asset Management (EAM) | AthenGuardia",
+  title: "Enterprise Asset Management (EAM) | AthenGuard",
   description: "Comprehensive enterprise asset management solution for organizations of all sizes",
 }
 
@@ -13,10 +13,10 @@ export default function EnterpriseAssetManagementPage() {
   const features = [
     {
       title: "Asset Tracking:",
-      description: "Maintain a real-time inventory of all on-premises, cloud-based, and remote assets, powered by AthenGuardia AssetDiscovery for seamless discovery."
+      description: "Maintain a real-time inventory of all on-premises, cloud-based, and remote assets, powered by AthenGuard AssetDiscovery for seamless discovery."
     },
     {
-      title: "AthenGuardia AssetDiscovery Integration:",
+      title: "AthenGuard AssetDiscovery Integration:",
       description: "Automatically identify assets across your organization with precise scanning capabilities for on-premises environments, cloud infrastructure, and agent-based systems."
     },
     {
@@ -57,7 +57,7 @@ export default function EnterpriseAssetManagementPage() {
     {
       title: "Small Businesses",
       items: [
-        "Discover and manage assets with AthenGuardia AssetDiscovery for real-time visibility.",
+        "Discover and manage assets with AthenGuard AssetDiscovery for real-time visibility.",
         "Prevent overspending by identifying underutilized resources.",
         "Automate maintenance to avoid unexpected downtime."
       ]
@@ -65,7 +65,7 @@ export default function EnterpriseAssetManagementPage() {
     {
       title: "Mid-Sized Companies",
       items: [
-        "Simplify asset discovery with AthenGuardia AssetDiscovery, scaling as your organization grows.",
+        "Simplify asset discovery with AthenGuard AssetDiscovery, scaling as your organization grows.",
         "Reduce risks by mapping asset dependencies and monitoring performance.",
         "Meet regulatory requirements with built-in compliance tools."
       ]
@@ -73,7 +73,7 @@ export default function EnterpriseAssetManagementPage() {
     {
       title: "Large Enterprises",
       items: [
-        "Use AthenGuardia AssetDiscovery to integrate and manage assets across multiple locations.",
+        "Use AthenGuard AssetDiscovery to integrate and manage assets across multiple locations.",
         "Improve operational efficiency with centralized asset data and relationship mapping.",
         "Enhance security by identifying outdated or high-risk assets."
       ]
@@ -138,7 +138,7 @@ export default function EnterpriseAssetManagementPage() {
         <section className="py-12 md:py-16 bg-gray-50">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl md:text-4xl lg:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-              Features of AthenGuardia Enterprise Asset Management
+              Features of AthenGuard Enterprise Asset Management
             </h2>
             <div className="space-y-4">
               {features.map((feature, index) => (
@@ -191,10 +191,10 @@ export default function EnterpriseAssetManagementPage() {
         <section className="py-16 bg-[#001B45] text-white text-center">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-5xl leading-[52px] font-bold mb-6">
-              Why Choose AthenGuardia EAM?
+              Why Choose AthenGuard EAM?
             </h2>
             <p className="font-nunito text-[22px] leading-[32px] text-white/90 max-w-6xl mx-auto">
-              AthenGuardia EAM works seamlessly with AthenGuardia AssetDiscovery, creating a comprehensive asset discovery, tracking, and management solution. Whether you track IoT devices, manage cloud-based assets, or monitor physical infrastructure, our tools give you complete visibility and control.
+              AthenGuard EAM works seamlessly with AthenGuard AssetDiscovery, creating a comprehensive asset discovery, tracking, and management solution. Whether you track IoT devices, manage cloud-based assets, or monitor physical infrastructure, our tools give you complete visibility and control.
             </p>
           </div>
         </section>
@@ -249,10 +249,10 @@ export default function EnterpriseAssetManagementPage() {
 
               <div className="w-full lg:w-5/12">
                 <h2 className="font-rajdhani text-3xl md:text-4xl lg:text-[42px] leading-tight font-bold text-navy mb-4 md:mb-6">
-                  Take control of your assets today with AthenGuardia EAM and AssetDiscovery
+                  Take control of your assets today with AthenGuard EAM and AssetDiscovery
                 </h2>
                 <p className="font-nunito text-sm md:text-base leading-relaxed text-[#686868] mb-4 md:mb-6">
-                  With real-time data, advanced analytics, and automated workflows, AthenGuardia EAM simplifies asset management, helping organizations of any size streamline operations and reduce risks. From small businesses to global enterprises, our solution adapts to meet your needs.
+                  With real-time data, advanced analytics, and automated workflows, AthenGuard EAM simplifies asset management, helping organizations of any size streamline operations and reduce risks. From small businesses to global enterprises, our solution adapts to meet your needs.
                 </p>
                 <div className="space-y-4">
                   {[

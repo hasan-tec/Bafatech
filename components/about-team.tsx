@@ -5,22 +5,22 @@ const teamMembers = [
   {
     name: "Connie Diaz",
     position: "CEO & Founder",
-    image: "https://images.unsplash.com/photo-1504051771394-dd2e66b2e08f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/images/Joshua Akhime.jpg",
   },
   {
     name: "James E. Huey",
     position: "Co-Founder",
-    image: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "",
   },
   {
     name: "Jone D. Alexon",
     position: "IT Expert",
-    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "",
   },
   {
     name: "June D. Vargas",
     position: "HR Manager",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "",
   },
 ];
 
@@ -82,7 +82,7 @@ export function AboutTeam() {
                   clipPath: "polygon(0% 100%, 50% 0%, 100% 100%)",
                 }}
               />
-              {/* Share button positioned at the triangle's vertex */}
+              {/* Share button positioned at the triangle's vertex
               <div className="absolute bottom-[-2px] left-1/2 transform -translate-x-1/2">
                 <button
                   className="w-12 h-12 rounded-full bg-[#0072BC] flex items-center justify-center text-white hover:bg-[#005a96] transition-colors"
@@ -90,7 +90,7 @@ export function AboutTeam() {
                 >
                   <Share2 className="w-5 h-5" />
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata: Metadata = {
-  title: "Patch Management | AthenGuardia",
+  title: "Patch Management | AthenGuard",
   description: "Professional patch management services for your organization",
 }
 
@@ -13,7 +13,7 @@ export default function PatchManagementPage() {
   const features = [
     {
       title: "Risk-Based Patching:",
-      description: "Integrates with AthenGuardia RBVM to prioritize patches based on asset criticality and vulnerability risk scores."
+      description: "Integrates with AthenGuard RBVM to prioritize patches based on asset criticality and vulnerability risk scores."
     },
     {
       title: "Cross-Platform Support:",
@@ -149,7 +149,7 @@ export default function PatchManagementPage() {
         <section className="py-12 md:py-16 bg-gray-50">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-3xl md:text-4xl lg:text-[42px] leading-tight font-bold text-[#041424] mb-6 md:mb-8">
-              Features of AthenGuardia Patch Management
+              Features of AthenGuard Patch Management
             </h2>
             <div className="space-y-4">
               {features.map((feature, index) => (
@@ -201,7 +201,7 @@ export default function PatchManagementPage() {
         <section className="py-8 bg-gray-50">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-[42px] leading-[52px] font-bold text-[#041424] mb-8">
-              How Patch Management Works with AthenGuardia EAM and RBVM
+              How Patch Management Works with AthenGuard EAM and RBVM
             </h2>
           
             <div className="space-y-12">
@@ -254,7 +254,7 @@ export default function PatchManagementPage() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-[42px] leading-[52px] font-bold text-[#041424] mb-8">
-              Benefits of AthenGuardia Patch Management
+              Benefits of AthenGuard Patch Management
             </h2>
             <div className="space-y-6">
               {benefits.map((benefit, index) => (
@@ -280,10 +280,10 @@ export default function PatchManagementPage() {
         <section className="py-16 bg-[#001B45] text-white text-center">
           <div className="container mx-auto px-4 lg:px-8">
             <h2 className="font-rajdhani text-5xl leading-[52px] font-bold mb-6">
-              Why Choose AthenGuardia Patch Management?
+              Why Choose AthenGuard Patch Management?
             </h2>
             <p className="font-nunito text-[22px] leading-[32px] text-white/90 max-w-6xl mx-auto">
-              AthenGuardia Patch Management isn&apos;t just about applying updates—it&apos;s about building a secure, efficient, and resilient IT environment. Integrating seamlessly with AthenGuardia EAM and RBVM ensures that patching efforts are strategic, targeted, and impactful.
+              AthenGuard Patch Management isn&apos;t just about applying updates—it&apos;s about building a secure, efficient, and resilient IT environment. Integrating seamlessly with AthenGuard EAM and RBVM ensures that patching efforts are strategic, targeted, and impactful.
             </p>
           </div>
         </section>
@@ -338,10 +338,10 @@ export default function PatchManagementPage() {
 
               <div className="w-full lg:w-5/12">
                 <h2 className="font-rajdhani text-3xl md:text-4xl lg:text-[42px] leading-tight font-bold text-navy mb-4 md:mb-6">
-                  Organizations of any size can rely on AthenGuardia to:
+                  Organizations of any size can rely on AthenGuard to:
                 </h2>
                 <p className="font-nunito text-sm md:text-base leading-relaxed text-[#686868] mb-4 md:mb-6">
-                  With AthenGuardia Patch Management, you&apos;re not just keeping systems up-to-date but building a stronger defense against evolving threats. Let patch management work for your organization, no matter the size or complexity.
+                  With AthenGuard Patch Management, you&apos;re not just keeping systems up-to-date but building a stronger defense against evolving threats. Let patch management work for your organization, no matter the size or complexity.
                 </p>
                 <div className="space-y-4">
                   {[

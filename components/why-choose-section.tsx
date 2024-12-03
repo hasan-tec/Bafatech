@@ -37,7 +37,7 @@ export function WhyChooseSection() {
                 Why Choose BafaTech Consulting?
               </h2>
               <p className="font-nunito text-sm sm:text-base leading-6 font-medium text-[#686868]">
-                At BafaTech Consulting, we focus on delivering straightforward, effective cybersecurity solutions that solve real challenges. Our AthenGuardia product line is designed to support your security goals.
+                At BafaTech Consulting, we focus on delivering straightforward, effective cybersecurity solutions that solve real challenges. Our AthenGuard product line is designed to support your security goals.
               </p>
             </div>
 

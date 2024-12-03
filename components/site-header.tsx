@@ -9,8 +9,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isServicesOpen, setIsServicesOpen] = useState(false)
-  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false)
+  const [isProductsOpen, setIsProductsOpen] = useState(false)
+  const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export function SiteHeader() {
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsServicesOpen(false)
+        setIsProductsOpen(false)
       }
     }
 
@@ -33,7 +33,7 @@ export function SiteHeader() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  const services = [
+  const Products = [
     'AthenGuard Asset Discovery',  
     'AthenGuard EAM',
     'AthenGuard Patch',
@@ -45,18 +45,19 @@ export function SiteHeader() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-md' : 'bg-white'
     }`}>
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex h-[90px] sm:h-24 md:h-22 items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <Image 
-              src="/images/BafaTech Logo.png"
-              alt="BafaTech Logo" 
-              width={260}
-              height={58}
-              className="h-16 sm:h-14 md:h-20 w-auto"
-              priority
-            />
-          </Link>
+     <div className="container mx-auto px-4 lg:px-8">
+      <div className="flex h-22 sm:h-22 md:h-22 items-center justify-between">
+        <Link href="/" className="flex items-center">
+          <Image 
+            src="/images/logo.png"
+            alt="BafaTech Logo" 
+            width={360}
+            height={81}
+            className="h-32 sm:h-32 md:h-32 lg:h-32 w-auto -mt-4 -mb-4 transition-all duration-300"
+            priority
+          />
+        </Link>
+
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center justify-end flex-grow space-x-4 xl:space-x-8">
@@ -69,22 +70,22 @@ export function SiteHeader() {
             <div className="relative" ref={dropdownRef}>
               <button 
                 className="flex items-center space-x-1 font-nunito text-sm xl:text-base font-semibold text-navy hover:text-primary transition-colors"
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
-                aria-expanded={isServicesOpen}
+                onClick={() => setIsProductsOpen(!isProductsOpen)}
+                aria-expanded={isProductsOpen}
                 aria-haspopup="true"
               >
-                <span>Service</span>
-                <ChevronDown className={`h-3 w-3 xl:h-4 xl:w-4 opacity-80 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
+                <span>Products</span>
+                <ChevronDown className={`h-3 w-3 xl:h-4 xl:w-4 opacity-80 transition-transform duration-200 ${isProductsOpen ? 'rotate-180' : ''}`} />
               </button>
               {/* Desktop Dropdown */}
-              {isServicesOpen && (
+              {isProductsOpen && (
                 <div 
                   className="absolute top-full left-0 mt-2 bg-white rounded-md shadow-lg py-1 w-[180px] xl:w-[200px] border border-gray-100"
                 >
-                  {services.map((service) => (
+                  {Products.map((service) => (
                     <Link
                       key={service}
-                      href={`/services/${service.toLowerCase().replace(/\s+/g, '-')}`}
+                      href={`/Products/${service.toLowerCase().replace(/\s+/g, '-')}`}
                       className="block px-4 py-2 text-xs xl:text-sm text-navy hover:bg-gray-50 hover:text-primary transition-colors"
                     >
                       {service}
@@ -135,17 +136,17 @@ export function SiteHeader() {
                   </Link>
                   <div className="space-y-3">
                     <button
-                      onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                      onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
                       className="flex items-center justify-between w-full font-nunito text-lg sm:text-xl font-semibold text-navy hover:text-primary transition-colors"
                     >
                       Service
-                      <ChevronDown className={`h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                      <ChevronDown className={`h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-200 ${isMobileProductsOpen ? 'rotate-180' : ''}`} />
                     </button>
-                    <div className={`pl-4 space-y-4 ${isMobileServicesOpen ? 'block' : 'hidden'}`}>
-                      {services.map((service) => (
+                    <div className={`pl-4 space-y-4 ${isMobileProductsOpen ? 'block' : 'hidden'}`}>
+                      {Products.map((service) => (
                         <Link
                           key={service}
-                          href={`/services/${service.toLowerCase().replace(/\s+/g, '-')}`}
+                          href={`/Products/${service.toLowerCase().replace(/\s+/g, '-')}`}
                           className="block font-nunito text-base sm:text-lg text-navy hover:text-primary transition-colors"
                         >
                           {service}
